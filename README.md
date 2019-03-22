@@ -127,7 +127,7 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
 - ☑ Pure Dark (GUN Fortress) and Semi Dark (Black Comet) endings get unique ending themes instead of sharing one.
   - ☑ Semi Dark's new unique end theme is the unused track "Broken".
   - ☑ Replace original Pure Dark end theme "Almost Dead" with the unused Magna-Fi's "Who I Am".
-- Fixed Eggman's filter-less voice in Lava Shelter.
+- ☑ Fixed Eggman's filter-less voice in Lava Shelter.
 
 ### Extra Features and Additions
 - Mission Skip: Option to instantly finish a mission you've already completed so you don't have to replay everything in Story Mode.
