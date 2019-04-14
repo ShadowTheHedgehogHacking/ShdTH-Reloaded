@@ -25,7 +25,7 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
 - Chaos Blast destroys cracked walls in The Doom.
 - ☑ Midair kick/shoot/aim doesn't bring you to a dead halt.
 - Weapons
-  - Lock-On Missle Weapons: Faster fire rate, similar to Gamma in SA1.
+  - ☑ Lock-On Missle Weapons: Faster fire rate, similar to Gamma in SA1.
   - Melee Weapons: More damage.
   - Melee Unarmed: More damage, more range.
 - Vehicles
@@ -48,38 +48,38 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
   - New alternate path.
   - Less haphazard sky laser placement and better warning.
 - Digital Circuit
-  - Alternate branching path between Hero and Dark mission goals.
-  - Faster rising glow bars.
-  - Springs added below rising glow bars that will snap you onto them.
-  - Less intrusive appearing tile-walls.
+  - ☑ Alternate branching path between Hero and Dark mission goals.
+  - ☑ Faster rising glow bars.
+  - ☑ Springs added below rising glow bars that will snap you onto them.
+  - ☑ Less intrusive appearing tile-walls.
 - Glyphic Canyon
-  - Old Secret Door alternate path is now a regular alternate path.
+  - ☑ Old Secret Door alternate path is now a regular alternate path.
   - Dark: Alternate routes open up as you activate Jewels.
 - Lethal Highway
-  - Hero: Change misleading Sonic voice line near beginning; "That barrier deflects bullets".
+  - ☑ Hero: Change misleading Sonic voice line near beginning; "That barrier deflects bullets".
   - Hero: Better weapons to take down the Black Tank.
 - Cryptic Castle
   - Old Secret Door alternate path is now a regular alternate path.
   - Dark: Hint at often-missed torch.
 - Prison Island
-  - Hero: Add 1 extra Secret Disc.
+  - ☑ Hero: Add 1 extra Secret Disc.
 - Circus Park
-  - Hero: Ring goal from 400 > 333.
+  - ☑ Hero: Ring goal from 400 > 333.
   - Dark: A few extra GUN Beetles.
 - Central City
   - Hero: More Mini-Bomb spawn locations.
   - Dark: Repositioned Big Bombs, 1 extra.
 - The Doom
-  - Major layout rework. Now paths you more linearly through the stage, featuring a detour in space.
-  - Hero: Needed Reasearchers lowered to 5.
-  - Dark: Needed GUN kills lowered.
+  - ☑ Major layout rework. Now paths you more linearly through the stage, featuring a detour in space.
+  - ☑ Hero: Needed Reasearchers lowered to 5.
+  - ☑ Dark: Needed GUN kills lowered.
 - Sky Troops
   - Differentiate from Glyphic Canyon.
 - Mad Matrix
   - Hero: Shortcuts across the matrix are opened up as you activate towers.
-  - Dark: Lowered needed Bombs from 30 to 15.
+  - ☑ Dark: Lowered needed Bombs from 30 to 15.
 - Death Ruins
-  - Old Secret Door alternate path is now a regular alternate path.
+  - ☑ Old Secret Door alternate path is now a regular alternate path.
   - Hero: Slightly lowered needed Alien kills.
 - The ARK
 - Air Fleet
@@ -91,9 +91,9 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
   - Hero: Shorter timer to increase challenge.
   - Normal: Allow completion without needing to wait for Hero timer to run out.
 - Lost Impact
-  - Hero: Greatly reduced needed Artificial Chaos.
-  - Close off certain dead-ends, so it's harder to get lost.
-  - Hint at Gun Lift's speed up ability earlier on.
+  - ☑ Hero: Greatly reduced needed Artificial Chaos.
+  - ☑ Close off certain dead-ends, so it's harder to get lost.
+  - ☑ Hint at Gun Lift's speed up ability earlier on.
 - GUN Fortress
   - Old Secret Door alternate path is now a regular alternate path.
 - Black Comet
@@ -101,18 +101,18 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
 - Lava Shelter
   - Old Secret Door alternate path is now a regular alternate path.
 - Cosmic Fall
-  - Fixed invisible platform near beginning, it's now visible.
+  - ☑ Fixed invisible platform near beginning, it's now visible.
 - Final Haunt
   - Differentiate from Black Comet and The Last Way.
 - The Last Way
   - Differentiate from Black Comet and Final Haunt.
 
 ### Unlocks and Challenges
-- Require only 3 endings to unlock Last Story
+- ☑ Require only 3 endings to unlock Last Story
 - Unlock Expert Mode after completing Last Story
   - This allows the Ranking system to be much more challenging since content would no longer be locked behind it.
 - Make Expert Mode much more challenging.
-  - Drop all rings on hit.
+  - ☑ Drop all rings on hit.
   - More difficult stage layouts.
 - Make Secret Doors unlock more interesting things.
 
@@ -127,12 +127,13 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
 - ☑ Pure Dark (GUN Fortress) and Semi Dark (Black Comet) endings get unique ending themes instead of sharing one.
   - ☑ Semi Dark's new unique end theme is the unused track "Broken".
   - ☑ Replace original Pure Dark end theme "Almost Dead" with the unused Magna-Fi's "Who I Am".
+- ☑ Lava Shelter's Egg Dealer bosses now play the game's cutscene-only "E.G.G.M.A.N. (Doc. Robeatnix Mix)". 
 - ☑ Fixed Eggman's filter-less voice in Lava Shelter.
 
 ### Extra Features and Additions
 - Mission Skip: Option to instantly finish a mission you've already completed so you don't have to replay everything in Story Mode.
-- Always skippable cutscenes.
-- ☑ Expert Select: Play the Expert version of a stage from the Select Mode menu.
-- ☑ Key Reset: Respawn the Secret Keys so you can hunt them down again.
+- ☑ Always skippable cutscenes.
+- Expert Select: Play the Expert version of a stage from the Select Mode menu.
+- Key Reset: Respawn the Secret Keys so you can hunt them down again.
 - Selectable debug and unused stages.
 - Big the Cat cameos.
