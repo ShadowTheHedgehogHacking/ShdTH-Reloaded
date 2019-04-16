@@ -56,7 +56,7 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
   - ☑ Old Secret Door alternate path is now a regular alternate path.
   - Dark: Alternate routes open up as you activate Jewels.
 - Lethal Highway
-  - ☑ Hero: Change misleading Sonic voice line near beginning; "That barrier deflects bullets".
+  - Hero: Change misleading Sonic voice line near beginning; "That barrier deflects bullets".
   - Hero: Better weapons to take down the Black Tank.
 - Cryptic Castle
   - Old Secret Door alternate path is now a regular alternate path.
@@ -109,7 +109,7 @@ Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U
 
 ### Unlocks and Challenges
 - ☑ Require only 3 endings to unlock Last Story
-- Unlock Expert Mode after completing Last Story
+- ☑ Unlock Expert Mode after completing Last Story
   - This allows the Ranking system to be much more challenging since content would no longer be locked behind it.
 - Make Expert Mode much more challenging.
   - ☑ Drop all rings on hit.
