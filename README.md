@@ -2,138 +2,52 @@
 <img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/master/res/title_screen.png" align="center" />
 </div>
 
-## About
-Shadow the Hedgehog: Reloaded is a mod that aims to make the gameplay in Shadow the Hedgehog smoother and less tedious.
+Shadow the Hedgehog: Reloaded is a quality of life and enhancement mod for the original Shadow the Hedgehog.
 
-Reloaded is for the NTSC GameCube version, playable via Nintendont for Wii/Wii U and via Dolphin Emulator.
+Reloaded is for the NTSC GameCube version, playable via Dolphin emulator and Nintendont for Wii / Wii U.
 
-## Goals (Incomplete)
+Reloaded is still in-progress. The project goals are listed below, and are at varying levels of completeness. A more verbose and detailed changelist can be found on the Changelist page once the first release is finalized.
 
-### Physics and Abilities
-- More SA1/SA2-style physics that keep momentum.
-  - More gradual momentum loss when you let go of the stick while running. No more "let go of stick and come to a dead stop".
-  - Faster run turning, so less "swingy" turning at top speed.
-  - Possibly lower top run speed to compensate for more sensitive turning.
-  - Keeping horizontal air momentum when landing.
-  - Less air friction so you don't slow down as fast.
-  - Slightly higher gravity for a bit more challenge and speed.
-  - More air "control" for better maneuverability.
-- Faster Homing Attack travel speed.
-- ☑ Faster Triangle Jump travel speed.
-- ☑ More Chaos Blast range.
-- More Chaos Blast damage.
-- Chaos Blast destroys cracked walls in The Doom.
-- ☑ Midair kick/shoot/aim doesn't bring you to a dead halt.
-- Weapons
-  - ☑ Lock-On Missle Weapons: Faster fire rate, similar to Gamma in SA1.
-  - Melee Weapons: More damage.
-  - Melee Unarmed: More damage, more range.
-- Vehicles
-  - GUN Unarmed Walker: More horizontal control while hovering.
-  - Hawk: More responsive movement, less shooting cooldown, faster projectile speed, smaller projectile homing range.
+## Less Tedious Gameplay
+The primary goal is to make the game less tedious and annoying, both on a short and long term scale. This is mainly accomplished by; 
+- Lowering mission objective numbers.
+- Increasing the available objects for missions.
+- Lowering the number of endings needed to unlock Last Story.
+- Changing the Expert Mode unlock requirement to unlock after beating Last Story.
+- Making slow elevators and such move much faster.
+- Cutscenes are always skippable.
+- And countless adjustments to stage object layouts, for less haphazard placement.
 
-### Missions and Stage Design
-- Global
-  - Adjust unfair enemy and hazard placement and spawn ranges.
-  - Adjusted location of every Secret Door, which take you somewhere new...
-  - Increase speed of various "too slow" elevators and platforms.
-  - Increase opening/closing speed and/or activation range of doors that don't respond quickly enough.
-  - Allow regaining control sooner after hitting many springs, ramps, and boosters.
-  - ☑ Faster Red Slime travel speed.
-  - ☑ Faster Pulley raise/fall speed.
-  - Golden GUN Beetle in every stage.
-  - Golden Gun Beetle has 1 HP, so they can be destroyed with one Homing Attack.
-  - ☑ Increased Heal Unit range.
-- Westopolis
-  - New alternate path.
-  - Less haphazard sky laser placement and better warning.
-- Digital Circuit
-  - ☑ Alternate branching path between Hero and Dark mission goals.
-  - ☑ Faster rising glow bars.
-  - ☑ Springs added below rising glow bars that will snap you onto them.
-  - ☑ Less intrusive appearing tile-walls.
-- Glyphic Canyon
-  - ☑ Old Secret Door alternate path is now a regular alternate path.
-  - Dark: Alternate routes open up as you activate Jewels.
-- Lethal Highway
-  - Hero: Change misleading Sonic voice line near beginning; "That barrier deflects bullets".
-  - Hero: Better weapons to take down the Black Tank.
-- Cryptic Castle
-  - Old Secret Door alternate path is now a regular alternate path.
-  - Dark: Hint at often-missed torch.
-- Prison Island
-  - ☑ Hero: Add 1 extra Secret Disc.
-- Circus Park
-  - ☑ Hero: Ring goal from 400 > 333.
-  - Dark: A few extra GUN Beetles.
-- Central City
-  - Hero: More Mini-Bomb spawn locations.
-  - Dark: Repositioned Big Bombs, 1 extra.
-- The Doom
-  - ☑ Major layout rework. Now paths you more linearly through the stage, featuring a detour in space.
-  - ☑ Hero: Needed Reasearchers lowered to 5.
-  - ☑ Dark: Needed GUN kills lowered.
-- Sky Troops
-  - Differentiate from Glyphic Canyon.
-- Mad Matrix
-  - Hero: Shortcuts across the matrix are opened up as you activate towers.
-  - ☑ Dark: Lowered needed Bombs from 30 to 15.
-- Death Ruins
-  - ☑ Old Secret Door alternate path is now a regular alternate path.
-  - Hero: Slightly lowered needed Alien kills.
-- The ARK
-- Air Fleet
-  - Old Secret Door alternate path is now a regular alternate path.
-  - Hero: Slightly lowered needed Alien kills.
-- Iron Jungle
-  - Remove death planes from upper tower sections so that you can fall into lower tower sections.
-- Space Gadget
-  - Hero: Shorter timer to increase challenge.
-  - Normal: Allow completion without needing to wait for Hero timer to run out.
-- Lost Impact
-  - ☑ Hero: Greatly reduced needed Artificial Chaos.
-  - ☑ Close off certain dead-ends, so it's harder to get lost.
-  - ☑ Hint at Gun Lift's speed up ability earlier on.
-- GUN Fortress
-  - Old Secret Door alternate path is now a regular alternate path.
-- Black Comet
-  - Differentiate from Final Haunt and The Last Way.
-- Lava Shelter
-  - Old Secret Door alternate path is now a regular alternate path.
-- Cosmic Fall
-  - ☑ Fixed invisible platform near beginning, it's now visible.
-- Final Haunt
-  - Differentiate from Black Comet and The Last Way.
-- The Last Way
-  - Differentiate from Black Comet and Final Haunt.
+## More Genuine Challenge
+The secondary goal is to make the game more fun by increasing its challenge and replayability, where appropriate. While the game's artificial difficulty (padded story requirements and inflated mission objectives) is minimized, authentic difficulty is enchanced.
+- All stage rankings are much harder.
+- Expert mode is much harder and more unique.
+- The Secret Door system was reworked into simply being additional pathways instead of one-time useless bonuses.
+- Secret Keys were changed to Red Rings and have been shuffled around here and there.
+- And many changes to stage object layouts, for more challenge in some areas.
 
-### Unlocks and Challenges
-- ☑ Require only 3 endings to unlock Last Story
-- ☑ Unlock Expert Mode after completing Last Story
-  - This allows the Ranking system to be much more challenging since content would no longer be locked behind it.
-- Make Expert Mode much more challenging.
-  - ☑ Drop all rings on hit.
-  - More difficult stage layouts.
-- Make Secret Doors unlock more interesting things.
+## Misc. Quality of Life Changes
+Many other miscellaneous annoyances are also addressed.
+- Checkpoint collision no longer slows down Shadow.
+- Shadow’s Homing Attack homes in much faster and has perfect tracking; no more orbiting around your target.
+- Shadow can now use the Slide move for as long as the melee (B) button is held down.
+- The jumping GUN mech has an improved hover ability.
+- And many more small changes.
 
-### Visuals and Audio
-- Widescreen option.
-- Menu style overhaul, with an HD option.
-- HD fonts and HUD option.
-- Tweaked character textures. Less like Heroes, more like SA2.
-- Tweaked stage textures and palettes to be less drab and samey.
-- Higher-res textures whenever possible.
-- Bloom reduction.
-- ☑ Pure Dark (GUN Fortress) and Semi Dark (Black Comet) endings get unique ending themes instead of sharing one.
-  - ☑ Semi Dark's new unique end theme is the unused track "Broken".
-  - ☑ Replace original Pure Dark end theme "Almost Dead" with the unused Magna-Fi's "Who I Am".
-- ☑ Lava Shelter's Egg Dealer bosses now play the game's cutscene-only "E.G.G.M.A.N. (Doc. Robeatnix Mix)". 
-- ☑ Fixed Eggman's filter-less voice in Lava Shelter.
+## Refreshed Art
+And finally, some artistic changes were made to improve the game’s art style and presentation.
+- The menus were updated in a new style.
+- The palette of some stages were redone so they would be more vibrant and less dull.
+- An optional texture pack of enhanced (not upscaled!) textures was compiled for Dolphin. This pack uses; 
+  - Uncompressed textures from the Xbox version,
+  - The highest resolution available for each texture (some stages used low res versions of many textures),
+  - Some imported textures from Sonic Adventure, Sonic Adventure 2, and Sonic Heroes,
+  - And a few custom textures for the remaining edge cases.
+- An additional optional texture pack of upscaled textures was made using the above as the basis.
+- Some music tracks that went unused in-game are added.
+  - “E.G.G.M.A.N. (Doc Robeatnix Mix)” was added to the Lava Shelter version of the Egg Dealer boss. The Egg Dealer theme still plays in the other Egg Dealer fights.
+  - “What I Am” by Magna-Fi replaces “Almost Dead” by Powerman 5000 for the GUN Fortress endings.
+  - “Broken” by Sins of a Divine Mother is added as a unique ending theme to the Black Comet endings, instead of reusing the GUN Fortress ending theme.
+  - Expert Mode’s ending has a unique theme and credits animation. ;)
 
-### Extra Features and Additions
-- Mission Skip: Option to instantly finish a mission you've already completed so you don't have to replay everything in Story Mode.
-- ☑ Always skippable cutscenes.
-- Expert Select: Play the Expert version of a stage from the Select Mode menu.
-- Key Reset: Respawn the Secret Keys so you can hunt them down again.
-- Selectable debug and unused stages.
-- Big the Cat cameos.
+
