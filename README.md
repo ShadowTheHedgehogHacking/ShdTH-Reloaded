@@ -5,13 +5,13 @@
 ## About
 Shadow the Hedgehog: Reloaded is a quality of life and enhancement mod for the original Shadow the Hedgehog.
 
-Reloaded is for the NTSC GameCube version, playable via Dolphin emulator and Nintendont for Wii / Wii U.
+Reloaded is for the NTSC GameCube version, playable via Dolphin emulator (recommended), Nintendont for Wii / Wii U, and Swiss for GameCube (untested).
 
 Reloaded is still in-progress. The project goals are listed below, and are at varying levels of completeness. A more verbose and detailed changelist will be made once the first release is finalized.
 
 ## Less Tedious Gameplay
 The primary goal is to make the game less tedious and annoying, both on a short and long term scale. This is mainly accomplished by; 
-- Lowering mission objective numbers.
+- Lowering lenghty mission objective numbers.
 - Increasing the available objects for missions.
 - Lowering the number of endings needed to unlock Last Story.
 - Changing the Expert Mode unlock requirement to unlock after beating Last Story.
