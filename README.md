@@ -51,4 +51,36 @@ And finally, some artistic changes were made to improve the game’s art style a
   - “Broken” by Sins of a Divine Mother is added as a unique ending theme to the Black Comet endings, instead of reusing the GUN Fortress ending theme.
   - Expert Mode’s ending has a unique theme and credits animation. ;)
 
+## How to play / Setup
+Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: md5: `fc936c9b0144c925b45b805fd39da2ac`
 
+To play this mod, you must:
+1. Build a custom ISO overwriting any files from the `files` folder.
+2. Enable Cheats and use provided game config .ini from the `code` folder.
+
+### Extraction of Game / FST Format
+
+1. Get the latest beta or dev Dolphin - [dolphin-5.0-14344 or newer recommended](https://dolphin-emu.org/download/)
+2. Before launching dolphin, create an empty file
+   `portable.txt` in the same folder as Dolphin.exe
+3. Open Dolphin
+4. Right-click Shadow The Hedgehog in the game list
+5. Select Properties
+6. Select FileSystem Tab
+7. Right-click "Disc"
+8. Select Extract Entire Disc...
+9. Select a new folder where you will store the game content and modify its files
+
+### Replacement of Files & Converting FST to ISO
+1. Open the newly extracted folder and merge/overwrite the `files` folder files.
+2. Open Dolphin
+3. Open Config (next to Graphics and Controllers)
+4. Select Paths Tab
+5. Select "Add" for Game Folders
+6. Navigate to the folder where you extracted the game
+7. Open the `sys` folder, and select "Select Folder"
+8. Close the confirmation pane, your games list should populate a new 0 filesize game of Shadow The Hedgehog. The 0 filesize entry is the FST format game.
+9. Right click the FST format game and pick `Convert File...`
+10. The Convert window will appear, click "Convert..." and name it `game.iso` for Nintendont, or `ShdTH-Reloaded.iso` for Dolphin.
+11. Move/Save the ISO to the Path Dolphin detects your games. A new ShadowTH-Reloaded entry should appear in your Dolphins game list with greater than 0 filesize. Use this when playing the game. 
+12. Click View -> Purge Game List Cache if the Reloaded Icon is not appearing on the new entry. If it still does not appear, the files were not properly replaced.
