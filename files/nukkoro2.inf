@@ -281,10 +281,11 @@ GOALEVENTPOS_N : 2103 -2360 -36346
 GOALEVENTPOS_H : 2103 -2360 -36346
 GOALEVENTPOS_D : 2103 -2360 -36346
 GOALEVENTPOS_X : 2103 -2360 -36346
-#Harder Ranks Done (Assume ShadowRifle for Dark Mission)
+#Harder Ranks Done
 RANK_H : 53000 48000 40000 30000
 RANK_N : 36000 29000 26000 23000
-RANK_D : 51000 45000 38000 30000	
+RANK_D : 36000 30000 24000 10000
+#51000 for Dark Route with Shadow Rifle allowed	
 #36000 for Dark Route (pre 3 forced door), post 2nd switch, No Shadow Rifle
 #TODO: Try rewriting hurtLogic with buffed HP. No invuln timer?
 MISSIONCOUNT_D : 1 1
@@ -300,11 +301,11 @@ GOALEVENTPOS_N : -1421 -210 -6502
 GOALEVENTPOS_H : -1421 -210 -6502
 GOALEVENTPOS_D : -1421 -210 -6502
 GOALEVENTPOS_X : -1421 -210 -6502
-#Harder Ranks Done (Assumes Yes Shadow Rifle for Dark)
+#Harder Ranks Done
 #HERO:
 #No Shadow Rifle: 41000 / 42000
 #Yes Shadow Rifle: 53000
-RANK_H : 53000 41000 35000 20000
+RANK_H : 41000 38000 35000 20000
 RANK_N : 42000 38000 32000 25000
 RANK_D : 51000 48000 41000 30000
 MISSIONCOUNT_D : 28 0
