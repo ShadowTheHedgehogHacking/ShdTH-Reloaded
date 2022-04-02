@@ -266,8 +266,9 @@ GOALEVENTPOS_X : 2200 -20886 7498
 #Harder Ranks Not Done -> Confirm Which Fire Rate for Final Version
 #Instant Fire Rate = 48000 (nearly all kills)
 #With LLV Fire rate, 43000 with most kills within speed range
+#With LLV Fire rate v2, 46000 with most kills, slowing for kills (and no fixed dashrings yet)
 RANK_N : 37000 34000 27000 10000
-RANK_D : 47000 43000 38000 20000
+RANK_D : 45000 43000 38000 20000
 MISSIONCOUNT_D : 4 0
 
 [Sky]
