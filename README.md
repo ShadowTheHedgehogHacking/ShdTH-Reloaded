@@ -60,7 +60,7 @@ To play this mod, you must:
 
 ### Extraction of Game / FST Format
 
-1. Get the latest beta or dev Dolphin - [dolphin-5.0-14344 or newer recommended](https://dolphin-emu.org/download/)
+1. Get the latest beta or dev Dolphin - [dolphin-5.0-16292 or newer recommended](https://dolphin-emu.org/download/)
 2. Before launching dolphin, create an empty file
    `portable.txt` in the same folder as Dolphin.exe
 3. Open Dolphin
