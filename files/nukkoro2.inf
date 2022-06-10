@@ -317,7 +317,7 @@ MISSIONCOUNT_H : 1 1
 [Space]
 #Space Gadget
 #Default
-PLAYER : 0 1160 1716 47 0 90 0
+PLAYER : 0 760 -150 47 0 90 0
 #Checkpoint 1
 #PLAYER : 0 969 -440 -749 0 0 0
 #Debug Unused Route
