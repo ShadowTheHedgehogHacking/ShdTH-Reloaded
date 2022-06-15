@@ -214,7 +214,7 @@ MISSIONCOUNT_HARD : 10 0
 #Sky Troops
 MIPMAPK : -70
 #Default
-PLAYER : 0 0 600 -250 0 0 0
+PLAYER : 0 0 450 -250 0 0 0
 #First Island
 #PLAYER : 0 -225 -1837 -5687 0 0 0
 #Last Island
