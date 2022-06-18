@@ -1,0 +1,18 @@
+[ALL]
+ROM : FINAL
+PREDVDLIST : 0
+DEBUGWHO : Player
+HEAPINFO : 0
+LOGREPORT : System    On
+LOGREPORT : Memory    On
+LOGREPORT : File      On
+LOGREPORT : Resource  On
+LOGREPORT : Gadget    On
+LOGREPORT : Event     On
+LOGREPORT : Player    On
+LOGREPORT : Enemy     On
+LOGREPORT : Nop       Off
+LANGUAGE : ENGLISH
+SPEECH : ENGLISH
+REGION : NTSC
+AREA : US
