@@ -12,7 +12,7 @@ MIPMAPK : -70
 [City1]
 #Westopolis
 #Start
-PLAYER : 0 0 -93 260 0 0 0
+PLAYER : 0 0 -73 260 0 0 0
 #Meet Sonic
 #PLAYER : 0 0 -4730 -2450 0 0 0
 #Meet Doom
@@ -355,7 +355,7 @@ MISSIONCOUNT_D : 5 0
 [ARKRuins2]
 #Cosmic Fall
 #Default
-PLAYER : 0 0 15 40 0 0 0
+PLAYER : 0 0 20 40 0 0 0
 #Checkpoint 5
 #PLAYER : 0 800 -860 -28559 0 0 0
 STARTSPD : 0 0 0 0
