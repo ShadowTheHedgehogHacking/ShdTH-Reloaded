@@ -143,7 +143,7 @@ MIPMAPK : -70
 #Debug?
 #PLAYER : 0 -4050 -6500 -19125 0 0 0
 #Default
-PLAYER : 0 0 0 0 0 0 0
+PLAYER : 0 0 20 0 0 0 0
 #VIP Room
 #PLAYER : 0 -2110 -5500 -15110 0 0 0
 #Tent entrance
