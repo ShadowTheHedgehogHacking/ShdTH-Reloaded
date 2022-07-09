@@ -1,0 +1,102 @@
+- DELETE
+Message ID / Branch / Sequence: 1113000
+
+- DELETE
+Message ID / Branch / Sequence: 1113200
+
++ NEW
+Message ID / Branch / Sequence: 1990006
+Text Type: BACKGROUND_VOICE
+audioId: 213
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 1990007
+Text Type: BACKGROUND_VOICE
+audioId: 214
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 1990008
+Text Type: BACKGROUND_VOICE
+audioId: 215
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 1990009
+Text Type: BACKGROUND_VOICE
+audioId: 216
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 1990010
+Text Type: BACKGROUND_VOICE
+audioId: 217
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 1990011
+Text Type: BACKGROUND_VOICE
+audioId: 218
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 1990012
+Text Type: BACKGROUND_VOICE
+audioId: 219
+subtitle:
+
+- DELETE
+Message ID / Branch / Sequence: 1113000
+
+- DELETE
+Message ID / Branch / Sequence: 1113200
+
++ NEW
+Message ID / Branch / Sequence: 8000000
+Text Type: PARTNER_OBJECTIVE
+audioId: 2863
+subtitle:
+Wait! You have gone too far! It is
+too late to show any mercy on the
+humans!
+
++ NEW
+Message ID / Branch / Sequence: 8001200
+Text Type: PARTNER_OBJECTIVE
+audioId: 2379
+subtitle:
+Shadow, wait! There are still
+wounded people who need our help!
+
++ NEW
+Message ID / Branch / Sequence: 8002000
+Text Type: AUTOMATIC
+audioId: 2378
+subtitle:
+Those vile soldiers are still
+defiling your precious home.
+
++ NEW
+Message ID / Branch / Sequence: 8003000
+Text Type: AUTOMATIC
+audioId: 376
+subtitle:
+There's no time for
+detours, Shadow!
+
++ NEW
+Message ID / Branch / Sequence: 8004000
+Text Type: AUTOMATIC
+audioId: 2385
+subtitle:
+We are outside the residential
+area. Do not fall.
+
++ NEW
+Message ID / Branch / Sequence: 8004200
+Text Type: AUTOMATIC
+audioId: 369
+subtitle:
+It's dangerous past here.
+Maybe you should turn back.

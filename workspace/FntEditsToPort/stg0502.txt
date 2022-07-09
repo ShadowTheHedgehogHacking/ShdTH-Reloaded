@@ -1,0 +1,29 @@
++ NEW
+Message ID / Branch / Sequence: 8000000
+Text Type: BACKGROUND_VOICE
+audioId: 27
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 8010000
+Text Type: BACKGROUND_VOICE
+audioId: 30
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 8020000
+Text Type: BACKGROUND_VOICE
+audioId: 34
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 8030000
+Text Type: BACKGROUND_VOICE
+audioId: 5
+subtitle:
+
++ NEW
+Message ID / Branch / Sequence: 8040000
+Text Type: BACKGROUND_VOICE
+audioId: 2
+subtitle:

@@ -1,0 +1,53 @@
+* EDIT
+Message ID / Branch / Sequence: 643100
+audioId: 2580
+
+* EDIT
+Message ID / Branch / Sequence: 643200
+audioId: 676
+
+* EDIT
+Message ID / Branch / Sequence: 2055100
+subtitle:
+Find the first Goal Ring!
+[Original text, requires manual translation.]
+
+* EDIT
+Message ID / Branch / Sequence: 2055200
+subtitle:
+Find the second Goal Ring
+before Sonic does!
+[Original text, requires manual translation.]
+
++ NEW
+Message ID / Branch / Sequence: 8000000
+Text Type: TRIGGER_OBJECT
+audioId: 2538
+subtitle:
+Where are you going?! There are no
+defense units past there! Return
+to the Save Point at once!
+
++ NEW
+Message ID / Branch / Sequence: 8000100
+Text Type: TRIGGER_OBJECT
+audioId: 2596
+subtitle:
+Why?
+Why do I know this place?
+
++ NEW
+Message ID / Branch / Sequence: 8000200
+Text Type: TRIGGER_OBJECT
+audioId: 663
+subtitle:
+What's wrong?
+Are you tired?
+
++ NEW
+Message ID / Branch / Sequence: 8000201
+Text Type: TRIGGER_OBJECT
+audioId: 598
+subtitle:
+There's still more to go!
+Don't get cocky!
