@@ -1,5 +1,5 @@
 <div align="center"><h1>Shadow The Hedgehog: Reloaded</h1>
-<img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/master/res/title_screen.png" align="center" />
+<img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/master/workspace/res/title_screen.png" align="center" />
 </div>
 
 ## About
