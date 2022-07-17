@@ -1,0 +1,79 @@
+> REORDER
+Message ID / Branch / Sequence: 486000
+	to
+Message ID / Branch / Sequence: 486100
+
+> REORDER
+Message ID / Branch / Sequence: 486001
+	to
+Message ID / Branch / Sequence: 487100
+
+> REORDER
+Message ID / Branch / Sequence: 486002
+	to
+Message ID / Branch / Sequence: 488100
+
+> REORDER (delete and remake)
+	Delete:
+Message ID / Branch / Sequence: 486003
+	Add:
+Message ID / Branch / Sequence: 8002101
+audioId: 3570
+subtitle:
+Ohhhhh, this is terrible!
+Shadow, do something!
+
+> REORDER (delete and remake)
+	Delete:
+Message ID / Branch / Sequence: 486004
+	Add:
+Message ID / Branch / Sequence: 8002102
+audioId: 3573
+subtitle:
+I'm... I'm okay... but the
+fate of the planet is
+in your hands...
+
+> REORDER (delete and remake)
+	Delete:
+Message ID / Branch / Sequence: 486005
+	Add:
+Message ID / Branch / Sequence: 8002100
+audioId: 3571
+subtitle:
+Shadow, can yous still keep going?
+I'm afraid I'm done!
+
+- DELETE
+Message ID / Branch / Sequence: 486006
+
+> REORDER (delete and remake)
+	Delete:
+Message ID / Branch / Sequence: 691000
+	Add:
+Message ID / Branch / Sequence: 8000101
+audioId: 3564
+subtitle:
+Hurry up and find him!
+
+> REORDER (delete and remake)
+	Delete:
+Message ID / Branch / Sequence: 691003
+	Add:
+Message ID / Branch / Sequence: 8000100
+audioId: 3559
+subtitle:
+Can you hear me? He must
+have retreated into the deepest
+parts of the comet!
+
+> REORDER (delete and remake)
+	Delete:
+Message ID / Branch / Sequence: 691005
+	Add:
+Message ID / Branch / Sequence: 8001100
+audioId: 3560
+subtitle:
+Shadow, am I coming through?
+Black Doom is waiting for you in
+a chamber further up ahead!
