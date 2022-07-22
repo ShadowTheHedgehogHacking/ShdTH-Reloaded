@@ -1,1 +1,0 @@
-The link is a download for a patched .afs file that fixes Eggman's unfiltered voice lines in Lava Shelter.
