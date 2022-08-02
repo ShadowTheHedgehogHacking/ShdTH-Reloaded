@@ -10,44 +10,132 @@ audioId: 676
 Message ID / Branch / Sequence: 2055100
 subtitle:
 Find the first Goal Ring!
-[Original text, requires manual translation.]
+[Original text, DeepL translations below]
+- FR
+Trouvez le premier Goal Ring !
+- GE
+Finde den ersten Goal Ring!
+- IT
+Trova il primo Goal Ring!
+- JP
+最初のゴールリングを見つけよう！
+- SP
+¡Encuentra el primer Goal Ring!
 
 * EDIT
 Message ID / Branch / Sequence: 2055200
 subtitle:
 Find the second Goal Ring
 before Sonic does!
-[Original text, requires manual translation.]
+[Original text, DeepL translations below]
+- FR
+Trouvez le deuxième 
+Goal Ring avant Sonic !
+- GE
+Finde den zweiten Goal Ring 
+bevor Sonic ihn findet!
+- IT
+Trova il secondo
+Goal Ring prima di Sonic!
+- JP
+ソニックより先に2つ目のゴールリングを見つけよう！
+- SP
+Encuentra el segundo Goal Ring
+antes de que lo haga Sonic.
 
 + NEW
 Message ID / Branch / Sequence: 8000000
 Text Type: TRIGGER_OBJECT
-audioId: 2538
+audioId: 2538 (ark03_e14_bd)
 subtitle:
 Where are you going?! There are no
 defense units past there! Return
 to the Save Point at once!
+- FR
+Où vas-tu ? Il n'y a pas d'unités
+de défense là-bas ! Reviens
+tout de suite au Save Point !
+- GE
+Was machst du denn?! Hier sind
+keine Verteidigungseinheiten mehr!
+Kehre sofort zum Save Point zurück!
+- IT
+Dove stai andando? Non ci sono
+unità di difesa da questa parte!
+Torna subito al Save Point!
+- JP
+どこへ行く！
+この先に防御装置はない。
+直ちにセーブポイントで引き返せ！
+- SP
+¿Adónde vas? ¡A partir de aquí no
+hay unidades de defensa! ¡Vuelve 
+inmediatamente al Save Point!
 
 + NEW
 Message ID / Branch / Sequence: 8000100
 Text Type: TRIGGER_OBJECT
-audioId: 2596
+audioId: 2596 (ark03_w00_sd)
 subtitle:
 Why?
 Why do I know this place?
+- FR
+Pourquoi...?
+Pourquoi est-ce que cet endroit
+me rappelle quelque chose ?
+- GE
+Warum ...?
+Warum kenne ich diesen Ort?
+- IT
+Perché...?
+Perché ricordo questo posto?
+- JP
+なぜだ...
+僕はなぜこの場所を知っている？
+- SP
+¿Por qué...?
+¿Por qué recuerdo este lugar?
 
 + NEW
 Message ID / Branch / Sequence: 8000200
 Text Type: TRIGGER_OBJECT
-audioId: 663
+audioId: 663 (all01_w01_sn)
 subtitle:
 What's wrong?
 Are you tired?
+- FR
+Qu'y a-t-il ?
+Tu es fatigué ?
+- GE
+Was ist denn?
+Bist du müde?
+- IT
+Cosa c'è?
+Sei forse stanco?
+- JP
+どうした、休憩か？
+- SP
+¿Qué pasa?
+¿Estás cansado?
 
 + NEW
 Message ID / Branch / Sequence: 8000201
 Text Type: TRIGGER_OBJECT
-audioId: 598
+audioId: 598 (all01_n01_sn)
 subtitle:
 There's still more to go!
 Don't get cocky!
+- FR
+C'est pas encore terminé !
+Ne jubile pas déjà !
+- GE
+Da sind noch mehr!
+Werde nicht zu großspurig!
+- IT
+Non è ancora finita!
+Non rilassarti troppo!
+- JP
+まだまだいるぜ！　油断するなよ！
+- SP
+¡Aún hay más!
+¡No te confíes!

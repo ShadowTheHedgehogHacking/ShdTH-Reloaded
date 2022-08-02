@@ -1,6 +1,16 @@
 + NEW
 Message ID / Branch / Sequence: 15100
 Text Type: AUTOMATIC
-audioId: 400
+audioId: 400 (all01_e04_bd)
 subtitle:
 What is that?
+- FR
+Qu'est-ce que c'est ?
+- GE
+Was ist das?
+- IT
+Cosa può essere?
+- JP
+なんだあれは...？
+- SP
+¿Qué es eso?

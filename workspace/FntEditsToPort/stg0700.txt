@@ -18,31 +18,80 @@ Message ID / Branch / Sequence: 488100
 Message ID / Branch / Sequence: 486003
 	Add:
 Message ID / Branch / Sequence: 8002101
-audioId: 3570
+audioId: 3570 (com03_w00_am)
 subtitle:
 Ohhhhh, this is terrible!
 Shadow, do something!
+- FR
+Ohhhhh, c'est terrible !
+Shadow, fais quelque chose !
+- GE
+Ohhhhh, das ist schrecklich!
+Shadow, tu doch was!
+- IT
+Ohhhhh, è terribile!
+Shadow, fa' qualcosa!
+- JP
+ヤダこれー！ きもちわるーい！
+シャドウ！ 早くなんとかしてー！
+- SP
+¡Ohhhhh, es horrible!
+¡Shadow, haz algo!
 
 > REORDER (delete and remake)
 	Delete:
 Message ID / Branch / Sequence: 486004
 	Add:
 Message ID / Branch / Sequence: 8002102
-audioId: 3573
+audioId: 3573 (com03_w00_rg)
 subtitle:
 I'm... I'm okay... but the
 fate of the planet is
 in your hands...
+- FR
+Moi ça... va... mais le destin
+de cette planète est entre
+tes mains...
+- GE
+Mir ... mir geht es gut ... Aber
+das Schicksal des Planeten liegt
+in deinen Händen ...
+- IT
+Sto.. sto bene... ma il destino
+di questo pianeta è nelle tue
+mani...
+- JP
+こっちは...大丈夫よ...
+この星の運命を頼んだわ！
+- SP
+Yo... estoy bien... pero el 
+destino del planeta está en tus
+manos...
 
 > REORDER (delete and remake)
 	Delete:
 Message ID / Branch / Sequence: 486005
 	Add:
 Message ID / Branch / Sequence: 8002100
-audioId: 3571
+audioId: 3571 (com03_w00_eg)
 subtitle:
 Shadow, can yous still keep going?
 I'm afraid I'm done!
+- FR
+Shadow, t'en veux encore ?
+Moi j'ai fini !
+- GE
+Shadow, kannst du durchhalten?
+Ich bin leider am Ende!
+- IT
+Shadow, non si è ancora arreso?
+Sono spacciato!
+- JP
+シャドウ！ まだかー！
+ワシはもう限界じゃー！
+- SP
+Shadow, ¿puedes seguir?
+¡Me temo que yo estoy acabado!
 
 - DELETE
 Message ID / Branch / Sequence: 486006
@@ -52,28 +101,76 @@ Message ID / Branch / Sequence: 486006
 Message ID / Branch / Sequence: 691000
 	Add:
 Message ID / Branch / Sequence: 8000101
-audioId: 3564
+audioId: 3564 (com03_n01_eg)
 subtitle:
 Hurry up and find him!
+- FR
+Dépêche-toi de le trouver !
+- GE
+Beeil dich und finde ihn!
+- IT
+Sbrigati a trovarlo!
+- JP
+早く見つけ出すんじゃ！
+- SP
+¡Date prisa y encuéntralo!
 
 > REORDER (delete and remake)
 	Delete:
 Message ID / Branch / Sequence: 691003
 	Add:
 Message ID / Branch / Sequence: 8000100
-audioId: 3559
+audioId: 3559 (com03_n00_kn)
 subtitle:
 Can you hear me? He must
 have retreated into the deepest
 parts of the comet!
+- FR
+Tu m'entends ? Il doit être dans
+les profondeurs de la comète !
+- GE
+Hörst du mich? Er muss sich in
+den tiefsten Bereich des Kometen
+zurückgezogen haben!
+- IT
+Riesci a sentirmi? Deve essersi
+rifugiato nelle profondità della
+cometa!
+- JP
+聞こえるか！
+その奥に逃げ込んでいるはずだ！
+- SP
+¿Puedes oírme? ¡Debe de estar
+oculto en las partes más profundas
+del cometa!
 
 > REORDER (delete and remake)
 	Delete:
 Message ID / Branch / Sequence: 691005
 	Add:
 Message ID / Branch / Sequence: 8001100
-audioId: 3560
+audioId: 3560 (com03_n00_rg)
 subtitle:
 Shadow, am I coming through?
 Black Doom is waiting for you in
 a chamber further up ahead!
+- FR
+Shadow, tu me reçois ?
+Black Doom t'attend dans
+une chambre un peu plus loin !
+- GE
+Shadow, hörst du mich? Black
+Doom wartet in einer Kammer weiter
+vorne auf dich!
+- IT
+Shadow, riesci a sentirmi? Black
+Doom ti sta aspettando in una
+stanza poco più avanti!
+- JP
+シャドウ、聞こえる？
+ブラックドゥームは、その先の
+部屋で待ち構えているわ！
+- SP
+Shadow, ¿puedes oírme?
+¡Black Doom te espera en una
+sala más profunda!

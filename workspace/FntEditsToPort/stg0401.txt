@@ -46,57 +46,152 @@ Text Type: BACKGROUND_VOICE
 audioId: 219
 subtitle:
 
-- DELETE
-Message ID / Branch / Sequence: 1113000
-
-- DELETE
-Message ID / Branch / Sequence: 1113200
-
 + NEW
 Message ID / Branch / Sequence: 8000000
 Text Type: PARTNER_OBJECTIVE
-audioId: 2863
+audioId: 2863 (bas02_m01_bd)
 subtitle:
 Wait! You have gone too far! It is
 too late to show any mercy on the
 humans!
+- FR
+Attends ! Tu es allé trop loin !
+Il est trop tard pour épargner
+les humains !
+- GE
+Warte! Du bist zu weit gegangen!
+Es ist zu spät, den Menschen
+Gnade zu zeigen!
+- IT
+Aspetta! Ormai è troppo tardi per
+tirarsi indietro! Non devi avere
+pietà degli uomini!
+- JP
+待て、目標を行き過ぎたぞ！
+貴様、人間どもに情けを
+かけるつもりか！
+- SP
+¡Espera! ¡Te has pasado! ¡Es
+demasiado tarde para mostrar
+compasión por los humanos!
 
 + NEW
 Message ID / Branch / Sequence: 8001200
 Text Type: PARTNER_OBJECTIVE
-audioId: 2379
+audioId: 2379 (ark01_e00_mr)
 subtitle:
 Shadow, wait! There are still
 wounded people who need our help!
+- FR
+Shadow, attends ! Il y a encore
+des blessés qui ont besoin
+de notre aide !
+- GE
+Shadow, warte! Es gibt noch
+Verletzte, die unsere Hilfe
+brauchen!
+- IT
+Shadow, aspetta! Ci sono ancora
+dei feriti che hanno bisogno del
+nostro aiuto!
+- JP
+待って、シャドウ！
+まだ、ケガをした人が残っているわ！
+- SP
+¡Espera, Shadow! ¡Aún quedan
+heridos que necesitan nuestra
+ayuda!
 
 + NEW
 Message ID / Branch / Sequence: 8002000
 Text Type: AUTOMATIC
-audioId: 2378
+audioId: 2378 (ark01_e00_bd)
 subtitle:
 Those vile soldiers are still
 defiling your precious home.
+- FR
+Ces soldats abjects profanent
+encore notre territoire.
+- GE
+Diese widerwärtigen Soldaten
+schänden immer noch unser
+kostbares Domizil.
+- IT
+Quei vili soldati stanno ancora
+profanando le nostre case.
+- JP
+まだ、卑劣な軍隊どもが
+お前の大事な故郷を汚しているぞ...
+- SP
+Esos repugnantes soldados
+están profanando nuestro hogar.
 
 + NEW
 Message ID / Branch / Sequence: 8003000
 Text Type: AUTOMATIC
-audioId: 376
+audioId: 376 (all01_e02_bd)
 subtitle:
 There's no time for
 detours, Shadow!
+- FR
+Pas le temps de faire un détour,
+Shadow !
+- GE
+Für Umwege bleibt keine
+Zeit, Shadow!
+- IT
+Non abbiamo tempo da perdere,
+Shadow!
+- JP
+寄り道をしている猶予はないぞ。
+- SP
+¡No tenemos tiempo para dar
+rodeos, Shadow!
 
 + NEW
 Message ID / Branch / Sequence: 8004000
 Text Type: AUTOMATIC
-audioId: 2385
+audioId: 2385 (ark01_e03_bd)
 subtitle:
 We are outside the residential
 area. Do not fall.
+- FR
+Nous sommes sortis de la zone
+résidentielle. Ne tombe pas !
+- GE
+Wir befinden uns außerhalb des
+Wohnbereiches. Falle nicht.
+- IT
+Siamo fuori dall'area residenziale.
+Attenzione a non cadere.
+- JP
+ここは居住区の外側だ...
+下に落ちるでないぞ...
+- SP
+Estamos fuera de la zona
+residencial. No te caigas.
 
 + NEW
 Message ID / Branch / Sequence: 8004200
 Text Type: AUTOMATIC
-audioId: 369
+audioId: 369 (all01_e01_mr)
 subtitle:
 It's dangerous past here.
 Maybe you should turn back.
+- FR
+Cela va commencer à être
+dangereux ! Tu devrais peut-être
+faire demi-tour.
+- GE
+Ab hier wird's gefährlich.
+Vielleicht solltest du umkehren.
+- IT
+La situazione si fa pericolosa
+ora. Forse sarà meglio tornare
+indietro.
+- JP
+この先は危ないわよ。
+引き返しましょう？
+- SP
+A partir de aquí es peligroso.
+Quizás deberías dar media vuelta.
