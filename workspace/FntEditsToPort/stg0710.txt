@@ -48,3 +48,17 @@ Ring!
 - SP
 ¡Puedes conseguir más Rings
 con esos globos!
+
+===== Aug 13 2022 edits ===
+
+* EDIT
+Message ID / Branch / Sequence: 426000
+Text Type: PARTNER_SWAP > AUTOMATIC
+
+* EDIT
+Message ID / Branch / Sequence: 429000
+Auto active time.
+
+* EDIT
+Message ID / Branch / Sequence: 430000 > 429001
+(No add/delete necessary.)
