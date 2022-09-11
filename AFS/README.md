@@ -1,3 +1,3 @@
 ## How do I patch my AFS with these files?
 
-* Use [PAFS] CLI utility for easy replacement (https://github.com/ShadowTheHedgehogHacking/PAFS)
+* Use [PAFS CLI utility](https://github.com/ShadowTheHedgehogHacking/PAFS) for easy replacement.
