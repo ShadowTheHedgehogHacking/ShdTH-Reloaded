@@ -1,0 +1,9 @@
+This is what you get for turning
+against your master!
+change to active time 213
+
+---
+change omega line following that to
+active time 231
+audio id 3015
+to fix missing omega audio

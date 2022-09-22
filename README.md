@@ -50,6 +50,9 @@ Many other miscellaneous annoyances are also addressed
 - EVENT | The first cutscene with Commander has him with broken hand/finger rig (corrected files taken from PS2 version)
 - EVENT | Circus Park/Prison Island normal missions have a textureless white chaos emerald
 - LAYOUT | The Doom has a GUN Robot that falls through the ground, making it easy to miss this enemy 
+- AUDIO | Iron Jungle EggBreaker 0511 restored Omega's missing intro line audio
+- AUDIO | Eggman missing radio filter for some lines where he is represented by EggMonitor
+- AUDIO | Large delay for Black Doom's line "Those are our Black Arms soldiers..."
 
 ## Refreshed Art
 And finally, some artistic changes were made to improve the game’s art style and presentation.
