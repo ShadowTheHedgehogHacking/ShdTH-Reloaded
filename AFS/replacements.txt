@@ -1,6 +1,0 @@
-all04_e06_bd: "Those are our Black Arms soldiers..."
-
-EXPERIMENTAL
-
-act04_g1**_sl: Air Fleet unique GUN Soldier lines
-bas03_***_eg: Lava Shelter unique Eggman lines
