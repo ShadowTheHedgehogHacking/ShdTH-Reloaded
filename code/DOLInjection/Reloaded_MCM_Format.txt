@@ -782,7 +782,7 @@ The Last Way Inclusive Scoring
 Hero / Dark points count as additional normal points on The Last Way stage
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x168EBC ----- 90030004 -> Branch
+NTSC 1.06 --- 0x8016F5FC ---- 90030004 -> Branch
 
 90030004 3DE08057
 61EFD748 81EF0000
@@ -790,7 +790,7 @@ NTSC 1.06 ---- 0x168EBC ----- 90030004 -> Branch
 80030000 7C002A14
 90030000 00000000
 
--------------- 0x168ECC ----- 90030008 -> Branch
+------------- 0x8016F60C ---- 90030008 -> Branch
 
 90030008 3DE08057
 61EFD748 81EF0000
@@ -866,3 +866,240 @@ NTSC 1.06 ---- 0x9F370 ------ 80840064 -> Branch
 2C000012 4181000C
 38000006 41820008
 38000007 00000000
+
+
+	-==-
+
+
+The Last Way idle lines
+Edits the idle lines to include some of the unused dialogue for The Last Way.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x506914 -----
+
+000001B7 000001B8
+000001E6 000001E6
+
+ -> 
+
+000001e6 000001e6
+000001e7 000001e8
+
+
+	-==-
+
+
+Cannon & Lock On Weapons No Knockback
+Cannon and Lock On type weapons won't cancel your running momentum when you fire them.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x236C70 ----- 4BDD7A6D -> 60000000
+-------------- 0x235510 ----- 4BDD91CD -> 60000000
+
+
+	-==-
+
+
+Bloom Reduction (Reloaded Default)
+Bloom intensity multiplier. Lessens the bloom effect to a more reasonable level.
+If you'd like a custom amount, then replace the second half of this code with a floating point number, in hexadecimal.
+Examples:
+0.25 : 3e800000
+0.375: 3ec00000
+0.5  : 3f000000
+0.95 : (default)
+[TheHatedGravity]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x567C30 ----- 3F733333 -> 3ec00000
+
+
+	-==-
+
+
+Melee Weapon Core Revamp
+!!REQUIRES SHADOW.MTP MODIFICATION!!
+
+Changing melee to be an extension of Player::Ground rather than its own state
+
+- Hold B to activate the weapon mask
+- While holding B, press and hold L to have shadow attack rapidly
+- uses 'Player::Ground' physics
+- Allows for melee held + attack held to create EffectMask + DamageColi extra range while jumping
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x6141C ------ 807F0040 -> 38600000
+-------------- 0x98B24 ------ 41820024 -> 4182001C
+-------------- 0xA3B60 ------ 40820040 -> 48000040
+-------------- 0x51710C ----- 31313031 -> 3DCCCCCD
+-------------- 0xAD2E0 ------ 901E0424 -> Branch
+
+3E00807D 621071A0
+82100000 82100000
+82100238 560F273E
+2C0F0008 40820044
+82100034 2C100000
+41820038 82100018
+2C100005 4082002C
+3E008057 62105D5E
+89F00000 2C0F0010
+40820018 3A100001
+89F00000 2C0F0002
+40820008 3800FFFF
+901E0424 00000000
+
+-------------- 0xAD2B8 ------ D01E043C -> Branch
+
+3E00807D 621071A0
+82100000 82100000
+82100238 560F273E
+2C0F0008 40820048
+82100034 2C100000
+4182003C 82100018
+2C100005 40820030
+3E008057 62105D5E
+89F00000 2C0F0010
+4082001C 3A100001
+89F00000 2C0F0002
+4082000C EC00002A
+EC000032 D01E043C
+60000000 00000000
+
+-------------- 0xAD2CC ------ 901E0420 -> Branch
+
+3E00807D 621071A0
+82100000 82100000
+82100238 560F273E
+2C0F0008 40820044
+82100034 2C100000
+41820038 82100018
+2C100005 4082002C
+3E008057 62105D5E
+89F00000 2C0F0010
+40820018 3A100001
+89F00000 2C0F0002
+40820008 3800002B
+2C050000 901E0420
+60000000 00000000
+
+-------------- 0xBFC04 ------ 5720063F -> Branch
+
+5720063F 4182003C
+3DE08057 61EFD734
+C00F0000 3DE08051
+61EFA108 C02F0000
+FC000840 4180001C
+3A0F0004 C0300000
+EC00082A D00F0000
+39E00001 2C0F0001
+60000000 00000000
+
+-------------- 0x170744 ----- 9421FFC0 -> Branch
+
+9421FFC0 3DE08051
+61EFA108 3A000001
+920F0000 00000000
+
+
+	-==-
+
+
+Melee Ammo Adjustments
+Adjusts melee ammo received on pickup
+
+Katana LV2 8 -> 32
+Black Sword 6 -> 18
+Torch 4 -> 12
+LastWay Env Weapon 4 -> 12
+EggSpear 6 -> 18
+Survival Knife 6 -> 18
+Dark Hammer 6 -> 18
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x54A308 ----- 00000008 -> 00000020
+-------------- 0x51B8AC ----- 00000006 -> 00000012
+-------------- 0x544D54 ----- 00000004 -> 0000000C
+-------------- 0x51C738 ----- 00000004 -> 0000000C
+-------------- 0x51C054 ----- 00000006 -> 00000012
+-------------- 0x51C000 ----- 00000006 -> 00000012
+-------------- 0x556DEC ----- 00000006 -> 00000012
+
+
+	-==-
+
+
+Disable Partner Intro
+Disables the intro camera event when you meet a partner in the stage
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x6D6D0 ------ 4082004C -> 4800004c
+
+
+	-==-
+
+
+Select Mode cursor no reset
+The stage select cursor won't reset to Westopolis every time you return to the Select Mode screen.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x2C1760 -----
+
+38A00000 38834560
+38600002 38000005
+90A40000 90640004
+98A40008 9004000C
+98A40010
+
+ -> 
+
+38834560 83440000
+2C1A0000 40820018
+83440004 2C1A0000
+4082000C 38600002
+90640004
+
+
+	-==-
+
+
+LightDash Exit State Change to Launched & Remove Radial Blur for Westopolis
+For Westopolis Only
+Allows for SkyDive to persist after light dashing
+Removes RadialBlur Effect from Launched::End as well
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x801FA2DC ---- 9421FFC0 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F0064
+40820008 4E800020
+9421FFC0 00000000
+
+------------- 0x80089F34 ---- 38000002 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F0064
+38000017 41820008
+38000002 00000000
+
+
+	-==-
+
+
+Devil Doom Boss Has No Awake Music
+Disables the awake theme (dark/hero shadow idle) for Devil Doom stage
+Compatible with 'disable all awake' as it changes different calls
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800A4FEC ---- 807E0010 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F02C6
+38600007 41820008
+807E0010 00000000
+
+------------- 0x800A4D80 ---- 807D0010 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F02C6
+38600000 41820008
+807D0010 00000000
