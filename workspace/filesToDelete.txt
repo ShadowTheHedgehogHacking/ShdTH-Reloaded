@@ -1,5 +1,7 @@
-files/InfoWindow.txd
 files/advertise.txd
+files/doomseye.one
+files/gindows.png
+files/InfoWindow.txd
 files/csdFiles/GameOver.gncp
 files/csdFiles/GameOver_EN.txd
 files/csdFiles/GameOver_FR.txd
@@ -7,10 +9,9 @@ files/csdFiles/GameOver_GE.txd
 files/csdFiles/GameOver_IT.txd
 files/csdFiles/GameOver_JP.txd
 files/csdFiles/GameOver_SP.txd
-files/csdFiles/JP/E3RomTitle.gncp
 files/csdFiles/Logo_JP.gncp
 files/csdFiles/MediaMenu.gncp
-files/doomseye.one
+files/csdFiles/JP/E3RomTitle.gncp
 files/event/event0811_sceneA.one
 files/event/event0903_sceneA.one
 files/event/event0906_sceneA.one
@@ -24,7 +25,6 @@ files/event/event0924_sceneA.one
 files/event/event0925_sceneA.one
 files/event/event0960_sceneA.one
 files/event/event0961_sceneA.one
-files/gindows.png
 files/palsel/PalSelEn.txd
 files/palsel/PalSelFr.txd
 files/palsel/PalSelGe.txd
