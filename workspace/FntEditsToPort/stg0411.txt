@@ -1,7 +1,44 @@
-CHANGE
+Boss partner on enemy kill: Espio Mad Matrix
 
-1791200
-1792200
-1793200
 
-Espio boss hit enemy lines
+Replace
+act02_p10_es
+1791200 : 80 (act02_p07_es)
+- FR
+Ne laisse passer personne !
+- GE
+Lasse niemanden durch!
+- IT
+Non lasciar passare nessuno!
+- JP
+悪即滅！
+- SP
+¡Que no pase nadie!
+
+Replace
+act02_p11_es
+1792200 : 91 (act02_p08_es)
+- FR
+Tue-les jusqu'au dernier !
+- GE
+Kämpft bis zum bitteren Ende!
+- IT
+Combatti all'ultimo sangue!
+- JP
+怨敵退散！
+- SP
+¡Lucha hasta el final!
+
+Replace
+act02_p12_es
+1793200 : 102 (act02_p09_es)
+- FR
+Excellent !
+- GE
+Großartig!
+- IT
+Eccellente!
+- JP
+見事！
+- SP
+¡Genial!

@@ -1,5 +1,37 @@
-CHANGE
-Sequence 1726200
-Sequence 1728200
+Boss partner on enemy kill: Cryptic Castle Amy
 
-Amy boss hit enemy lines
+Replace
+act02_p10_am
+
+1726200	: audio 98 (act02_p09_am)
+- FR
+Ca t'apprendra à te mêler
+des affaires des autres !
+- GE
+Das hast du davon, dass du
+uns in den Weg geraten bist!
+- IT
+Questo è quello che succede a
+che si mette in mezzo!
+- JP
+アタシたちのジャマした罰よ！
+- SP
+¡Te está bien empleado por
+entrometerte!
+
+
+
+Replace
+act02_p12_am
+
+1728200	: audio 76 (act02_p07_am)
+- FR
+Bien joué, Shadow !
+- GE
+Gute Arbeit, Shadow!
+- IT
+Bel lavoro, Shadow!
+- JP
+さっすがシャドウ！
+- SP
+¡Buen trabajo, Shadow!
