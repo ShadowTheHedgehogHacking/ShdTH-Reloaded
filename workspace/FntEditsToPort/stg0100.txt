@@ -1,0 +1,56 @@
+Linking "It looks like most of the citizens have been evacuated..." to "Just what are these black creatures?".
+
+762001
+
+> REORDER (delete and remake)
+	Delete: 
+Message ID / Branch / Sequence: 753000
+	Add: 
+Message ID / Branch / Sequence: 762001 (after cty01_e11_bd)
+Text Type: AUTOMATIC
+audioId: 3581 (cty01_e02_bd)
+subtitle:
+Shadow, behold! The same fate 
+awaits the rest of this pathetic
+planet!
+- FR
+Shadow, regarde ! Cette misérable
+planète va subir le même sort !
+- GE
+Shadow, sieh nur! Das gleiche
+Schicksal erwartet den Rest dieses
+jämmerlichen Planeten!
+- IT
+Shadow, la sorte dell'umanità
+è un destino di sofferenza!
+- JP
+見よ、シャドウよ...
+今からこの星の全てが
+こうなるのだ...
+- SP
+¡Shadow, prepárate! ¡A este 
+patético planeta le aguarda el
+mismo destino!
+
+> REORDER (delete and remake)
+	Delete: 
+Message ID / Branch / Sequence: 753200
+	Add: 
+Message ID / Branch / Sequence: 762201 (after cty01_e11_sn)
+Text Type: AUTOMATIC
+audioId: 3582 (cty01_e02_sn)
+subtitle:
+Just what are these black creatures?
+- FR
+Qui sont ces créatures noires ?
+- GE
+Was sind diese schwarzen Kreaturen
+überhaupt?
+- IT
+Cosa sono queste creature nere?
+- JP
+あの黒いヤツラ、
+いったい何者なんだ！？
+- SP
+¿Qué demonios son estas criaturas
+negras?
