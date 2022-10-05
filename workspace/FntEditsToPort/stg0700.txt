@@ -174,3 +174,30 @@ stanza poco più avanti!
 Shadow, ¿puedes oírme?
 ¡Black Doom te espera en una
 sala más profunda!
+
+===========================
+10/5/2022
+
+(Sequencing "Prepare yourself, Black Doom!" to "There he is! I've found him!" (com03_e00_sd))
+
+> REORDER (delete and remake)
+	Delete:
+Message ID / Branch / Sequence: 692100
+	Add:
+Message ID / Branch / Sequence: 1368101
+Text Type: PARTNER_OBJECTIVE
+audioId: 3569 (com03_n02_sd)
+subtitle:
+Prepare yourself, Black Doom!
+- FR
+Prépare-toi, Black Doom !
+- GE
+Mach dich auf was gefasst,
+Black Doom!
+- IT
+Preparati, Black Doom!
+- JP
+覚悟するんだな！
+ブラックドゥーム！！
+- SP
+¡Prepárate, Black Doom!
