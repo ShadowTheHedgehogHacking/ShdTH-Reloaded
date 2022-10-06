@@ -12,7 +12,8 @@ Always Skippable Cutscenes
 Allows you to always skip cutscenes by default.
 [LimblessVector]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x16DC40 ----- 41820010 -> 60000000
+NTSC 1.06 --- 0x80174380 ---- 41820010 -> 60000000
+------------- 0x802D29A0 ---- 41820010 -> 60000000
 
 
 	-==-
@@ -1103,3 +1104,172 @@ NTSC 1.06 --- 0x800A4FEC ---- 807E0010 -> Branch
 81EF0000 2C0F02C6
 38600000 41820008
 807D0010 00000000
+
+
+	-==-
+
+
+Light Dash ValidRing Distance
+80->100
+Increased. While already Light Dashing, Shadow checks further ahead for the next ring to dash to.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008A600 ---- C0029144 -> 3DE042C8
+------------- 0x8008A604 ---- D00D3020 -> 91ED3020
+
+
+	-==-
+
+
+Slide Steer
+2->4
+Increased. Shadow has more turn control while sliding.
+Does not copy for behavior::end, only while sliding
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008DADC ---- C00291C0 -> C00281D0
+------------- 0x8008DBC8 ---- C00291C0 -> C00281D0
+
+
+	-==-
+
+
+Slide Run Threshhold
+200->75
+Lowered. Shadow can slide instead of spindash at a lower run speed.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800840A0 ---- C022901C -> 3DE04296
+------------- 0x800840AC ---- D02D2FD4 -> 91ED2FD4
+
+
+	-==-
+
+
+Spindash Startup Delay
+0.25->1
+Increased, but spindash should be releasable sooner.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008F7B8 ---- C0029224 -> 3DE03F80
+------------- 0x8008F7C0 ---- D00D3074 -> 91ED3074
+
+
+	-==-
+
+
+Strafe Walk Speed
+30->55
+Increased. Shadow's strafe walk speed is higher.
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800840A4 ---- C0028F88 -> 3E00425C
+------------- 0x800840B0 ---- D00D2FD8 -> 920D2FD8
+
+
+	-==-
+
+
+Red Slime Speed
+340->425
+Increased. Shadow travels faster through red slime.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x805F2570 ---- 43AA0000 -> 43D48000
+
+
+	-==-
+
+
+Skippable Logos (ASM)
+Pressing Start now skips the intro logos.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802B6480 ---- 7C7F1B78 -> Branch
+
+7c7f1b78 83030000
+2c18000a 40820020
+3f008056 631876aa
+831876aa 2c180400
+4082000c 3b000008
+931f0000 00000000
+
+
+	-==-
+
+
+Beating Last Story unlocks Expert (ASM)
+Expert Mode will unlock after you defeat Devil Doom, rather than requiring every A-rank.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802D11A0 ---- 3880000A -> Branch
+
+3880000a 3ae00001
+9ae3ffb9 00000000
+
+
+	-==-
+
+
+Advanced Full Widescreen v5 with UI/GNCP Code
+Do not use with Dolphin Widescreen Hack
+Requires .gncp patches from:
+https://github.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH
+[dreamsyntax, Dolphin Wiki]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x805F67A0 ---- 42F00000 -> C1700000
+------------- 0x805F67A8 ---- 44020000 -> 44250000
+------------- 0x805F67E0 ---- 440C0000 -> 442F0000
+------------- 0x805F67D0 ---- 42A80000 -> C2600000
+------------- 0x805F67F0 ---- 429C0000 -> C2780000
+------------- 0x80343228 ---- 9421FEA0 -> 4E800020
+------------- 0x804AB5CC ---- 62617369 -> 42F00000
+------------- 0x805F7D4C ---- 40000000 -> 40300000
+------------- 0x80519F60 ----
+
+45343131 31373031
+206D7750 6C795374
+6172744D 656D3A20
+63616E27 7420706C
+61792066 696C6520
+74797065 204D5056
+2E205573
+
+ -> 
+
+3DC08057 3DE03F40
+91EEE098 3DE0BF40
+91EEE084 7E0802A6
+4E800421 7E0803A6
+3DE03F80 91EEE098
+3DE0BF80 91EEE084
+4E800020
+
+------------- 0x80036764 ---- 4E800421 -> 484E37FD
+------------- 0x8036328C ---- 4E800421 -> 481B6CD5
+------------- 0x80363180 ---- 4E800421 -> 481B6DE1
+------------- 0x800BCA54 ---- 4E800421 -> 4845D50D
+------------- 0x80345D98 ---- 4E800421 -> 481D41C9
+------------- 0x800BC8D8 ---- C3629918 -> Branch
+
+C3629918 81E10094
+3E00800B 6210C4B0
+7C0F8000 40820028
+3DE08057 61EF5F1C
+81EF0000 2C0F0002
+3DE0804A 61EFB5CC
+C36F0000 41820008
+FF60D850 00000000
+
+------------- 0x800622A8 ---- 4E800421 -> 484B7CB9
+------------- 0x80062300 ---- 4E800421 -> 484B7C61
+------------- 0x8049475C ---- D0030004 -> Branch
+
+3DC03F40 91C22000
+C2222000 EC110032
+D0030004 00000000
+
+------------- 0x80484334 ---- C0830068 -> Branch
+
+3DC04000 91C22000
+C0822000 00000000
