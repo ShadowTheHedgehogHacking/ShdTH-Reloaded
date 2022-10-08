@@ -195,3 +195,10 @@ indietro.
 - SP
 A partir de aquí es peligroso.
 Quizás deberías dar media vuelta.
+
+======
+10-8-2022 edits; vanilla typo fix, "B button" > "X button"
+
+* EDIT
+Message ID / Branch / Sequence: 25101
+audioId: 750 > 762 (all02_h07gc_sd > all02_h07xb_sd)
