@@ -299,21 +299,30 @@ NTSC 1.06 ---- 0x99BE4 ------ 5460063F -> Branch
 	-==-
 
 
-Disable Slide on B-press on ground for melee and add extended moveset
+Disable Slide on B-press on ground for melee and state extension
 Disables sliding with B button if melee weapon held
-Enables air-slide and other melee extensions
+Enables slide while holding a melee weapon in these states:
+- Spindash
+- HomingAttack
+- JumpDash
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x99AF8 ------ 5460063F -> Branch
+NTSC 1.06 --- 0x800A0238 ---- 5460063F -> Branch
 
 3E00807D 621071A0
 82100000 82100000
-82100238 560F273E
-2C0F0008 40820024
-82100034 2C100000
-41820018 82100018
-2C100005 4082000C
-2C100098 40820008
+82D00238 56CF273E
+2C0F0008 40820054
+82D60034 2C160000
+41820048 82D60018
+2C160005 4082003C
+82D0022C 82D60030
+82D60010 39E00001
+2C160006 4182001C
+2C160008 41820014
+2C160012 4182000C
+2C0F0001 41820010
+2C0F00EE 40820008
 5460063F 00000000
 
 
@@ -928,11 +937,11 @@ Changing melee to be an extension of Player::Ground rather than its own state
 - Allows for melee held + attack held to create EffectMask + DamageColi extra range while jumping
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x6141C ------ 807F0040 -> 38600000
--------------- 0x98B24 ------ 41820024 -> 4182001C
--------------- 0xA3B60 ------ 40820040 -> 48000040
--------------- 0x51710C ----- 31313031 -> 3DCCCCCD
--------------- 0xAD2E0 ------ 901E0424 -> Branch
+NTSC 1.06 --- 0x80067B5C ---- 807F0040 -> 38600000
+------------- 0x8009F264 ---- 41820024 -> 4182001C
+------------- 0x800AA2A0 ---- 40820040 -> 48000040
+------------- 0x8051A10C ---- 31313031 -> 3DCCCCCD
+------------- 0x800B3A20 ---- 901E0424 -> Branch
 
 3E00807D 621071A0
 82100000 82100000
@@ -948,7 +957,7 @@ NTSC 1.06 ---- 0x6141C ------ 807F0040 -> 38600000
 40820008 3800FFFF
 901E0424 00000000
 
--------------- 0xAD2B8 ------ D01E043C -> Branch
+------------- 0x800B39F8 ---- D01E043C -> Branch
 
 3E00807D 621071A0
 82100000 82100000
@@ -965,7 +974,7 @@ NTSC 1.06 ---- 0x6141C ------ 807F0040 -> 38600000
 EC000032 D01E043C
 60000000 00000000
 
--------------- 0xAD2CC ------ 901E0420 -> Branch
+------------- 0x800B3A0C ---- 901E0420 -> Branch
 
 3E00807D 621071A0
 82100000 82100000
@@ -982,7 +991,7 @@ EC000032 D01E043C
 2C050000 901E0420
 60000000 00000000
 
--------------- 0xBFC04 ------ 5720063F -> Branch
+------------- 0x800C6344 ---- 5720063F -> Branch
 
 5720063F 4182003C
 3DE08057 61EFD734
@@ -994,7 +1003,7 @@ EC00082A D00F0000
 39E00001 2C0F0001
 60000000 00000000
 
--------------- 0x170744 ----- 9421FFC0 -> Branch
+------------- 0x80176E84 ---- 9421FFC0 -> Branch
 
 9421FFC0 3DE08051
 61EFA108 3A000001
@@ -1300,7 +1309,6 @@ NTSC 1.06 --- 0x800B7E20 ---- 7FE3FB78 -> Branch
 3E004120 3EC03FC0
 91E2A5E4 9202A60C
 92C2A5F0 00000000
-
 
 
 	-==-
