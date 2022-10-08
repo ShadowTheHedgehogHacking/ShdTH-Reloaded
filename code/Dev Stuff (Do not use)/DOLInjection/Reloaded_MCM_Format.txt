@@ -1273,3 +1273,48 @@ D0030004 00000000
 
 3DC04000 91C22000
 C0822000 00000000
+
+
+	-==-
+
+
+Expert Ring Loss
+In Expert Mode, getting hit will make you lose all your rings, and they cannot be recollected.
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800B7E20 ---- 7FE3FB78 -> Branch
+
+3EC08057 62D6D7C5
+8AD60000 2C160001
+40820018 3EC08057
+62D6670C 3AE00000
+92F60000 3AC00000
+7FE3FB78 00000000
+
+------------- 0x800CB8D8 ---- 28000000 -> Branch
+
+28000000 41820018
+39E00000 3E003F4C
+6210CCCD 3EC04120
+48000010 3DE040A0
+3E004120 3EC03FC0
+91E2A5E4 9202A60C
+92C2A5F0 00000000
+
+
+
+	-==-
+
+
+Holdable Slide
+The player can slide as long as B or X are held, with no minimum or maximum slide time. Exception: sliding off a ledge.
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008DC2C ---- FC010040 -> Branch
+
+3DE08057 61EF5D5F
+89EF0000 2C0F0002
+41820014 2C0F0008
+4182000C C00291C8
+4800000C 3DE08000
+C00F000F 00000000
