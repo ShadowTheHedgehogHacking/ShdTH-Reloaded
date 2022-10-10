@@ -30,13 +30,15 @@ The secondary goal is to make the game more fun by increasing its challenge and 
 ## Misc. Quality of Life Changes
 Many other miscellaneous annoyances are also addressed
 - Checkpoint collision no longer slows down Shadow
-- Shadow’s Homing Attack homes in much faster and has perfect tracking; no more orbiting around your target
-- Shadow can now use the Slide move for as long as the melee (B) button is held down
+- Shadow’s Homing Attack homes in much faster and more precise tracking
+- Shadow can now use the Slide move for as long as the melee (B) or (X) button is held down
 - Shadow can be told to JumpDash rather than HomingAttack by holding the (L) button before performing a HomingAttack/JumpDash
-- Shadow can cancel LightDash by pressing the (L) button
 - Shadow can control his DigitalSpline speeds on Digital Circuit and Mad Matrix by holding (A) to speed up or (B) to slow down
+- Shadow can now activate melee collision by holding (B) which creates trails. While holding (B), Shadow can also hold (L) to rapidly swing the weapon based on the speed he is moving.
+- If Shadow is holding a melee weapon, he can now slide out of a SpinDash, HomingAttack, or JumpDash with (B). He can still AirAttack with melee weapons but he must double press (B), holding the last (B) to compensate for the attack collision change
+- Shadow can pick a Mission character at any time with Dpad. This will prevent activating other partners. You can restore activating partners you run into by pressing Dpad UP at any time.
 - Shadow no longer has the Skid/Brake state
-- Shadow no longer has the Triangle Jump Exit state 
+- Shadow no longer has the Triangle Jump Exit state
 - Shadow can LightDash additionally from a SkyDive, JumpDash, Homing Attack where before he could only do it while Falling, Jumping, or on Ground
 - The jumping GUN mech has an improved hover ability and more responsive rotation
 - CarType Vehicles can be dismounted mid-air (Brake button is moved to Y button) and are much faster if tapping (A). Holding (A) retains original speed
@@ -44,15 +46,23 @@ Many other miscellaneous annoyances are also addressed
 - And many more small changes
 
 ## Fixed Oversights
+- GEO | Remove double collisions in Death Ruins
+- GEO | Remove extra/unused geo across multiple stages
 - ENEMY | Artifical Chaos's glowing eyes are 90 degrees off; appearing to the side of the eye sockets
 - ENEMY | BigFoot TypeB has a strange issue where the Glass Shine would float relative to Shadow's camera
 - EVENT | Shadow's expert level complete animation has unlit rings (US version PS2/GC issue)
 - EVENT | The first cutscene with Commander has him with broken hand/finger rig (corrected files taken from PS2 version)
 - EVENT | Circus Park/Prison Island normal missions have a textureless white chaos emerald
-- LAYOUT | The Doom has a GUN Robot that falls through the ground, making it easy to miss this enemy 
+- LAYOUT | The Doom has a GUN Robot that falls through the ground, making it easy to miss this enemy
+- LAYOUT | Port JPN ver layout bugfixes, if they made sense
+- LAYOUT | Remove duplicate gravity switches in Space Gadget, making LOUD noises when passed
+- AUDIO | Lower the volume of Super Shadow's Chaos Spear charge sound effect, which largely overpowers everything else
 - AUDIO | Iron Jungle EggBreaker 0511 restored Omega's missing intro line audio
 - AUDIO | Eggman missing radio filter for some lines where he is represented by EggMonitor
 - AUDIO | Large delay for Black Doom's line "Those are our Black Arms soldiers..."
+- AUDIO/FNT | Subtitle timings have been modified to match with the English audio recordings for the EN subtitles
+- AUDIO | GUN Soldiers no longer incorrectly mention Black Arms in The Doom / Lost Impact
+
 
 ## Refreshed Art
 And finally, some artistic changes were made to improve the game’s art style and presentation.
@@ -68,18 +78,20 @@ And finally, some artistic changes were made to improve the game’s art style a
   - “E.G.G.M.A.N. (Doc Robeatnix Mix)” was added to the Lava Shelter version of the Egg Dealer boss. The Egg Dealer theme still plays in the other Egg Dealer fights
   - “What I Am” by Magna-Fi replaces “Almost Dead” by Powerman 5000 for the GUN Fortress endings
   - “Broken” by Sins of a Divine Mother is added as a unique ending theme to the Black Comet endings, instead of reusing the GUN Fortress ending theme
+  - Devil Doom boss fight music will no longer be interrupted by Shadow getting Dark/Hero Shadow (filling up the meters)
   - Expert Mode’s ending has a unique theme and credits animation. ;)
 
 ## How to play / Setup
 Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: md5: `fc936c9b0144c925b45b805fd39da2ac`
 
 To play this mod, you must:
+0. Note: It is recommended to use the "Releases" tab rather than doing the below, as the below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements
 1. Build a custom ISO overwriting any files from the `files` folder
 2. Enable Cheats and use provided game config .ini from the `code` folder
 
 ### Extraction of Game / FST Format
 
-1. Get the latest beta or dev Dolphin - [dolphin-5.0-16648 or newer recommended](https://dolphin-emu.org/download/)
+1. Get the latest beta or dev Dolphin - [dolphin-5.0-17574 or newer recommended](https://dolphin-emu.org/download/)
 2. Before launching dolphin, create an empty file
    `portable.txt` in the same folder as Dolphin.exe
 3. Open Dolphin

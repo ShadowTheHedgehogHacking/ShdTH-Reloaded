@@ -1209,12 +1209,17 @@ NTSC 1.06 --- 0x802B6480 ---- 7C7F1B78 -> Branch
 
 Beating Last Story unlocks Expert (ASM)
 Expert Mode will unlock after you defeat Devil Doom, rather than requiring every A-rank.
-[LimblessVector]
+
+Add bugfix for A rank not calculating
+[LimblessVector, dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x802D11A0 ---- 3880000A -> Branch
 
 3880000a 3ae00001
 9ae3ffb9 00000000
+
+------------- 0x80204fb8 ---- 408200C4 -> 60000000
+------------- 0x80205078 ---- 9BBF16C9 -> 60000000
 
 
 	-==-
@@ -1326,3 +1331,14 @@ NTSC 1.06 --- 0x8008DC2C ---- FC010040 -> Branch
 4182000C C00291C8
 4800000C 3DE08000
 C00F000F 00000000
+
+
+	-==-
+
+
+Devil Doom is a Ranked Mission
+Restores the Rank screen for Devil Doom
+It has values for ranks in the original game but never displays
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80205670 ---- 41820018 -> 48000018
