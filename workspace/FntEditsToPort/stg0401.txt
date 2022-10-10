@@ -202,3 +202,10 @@ Quizás deberías dar media vuelta.
 * EDIT
 Message ID / Branch / Sequence: 25101
 audioId: 750 > 762 (all02_h07gc_sd > all02_h07xb_sd)
+
+======
+10-9-2022 edits; remove references of aliens from soldiers.
+
+* EDIT
+index: 372, 401, 421
+audioID: 300, 321 > 216

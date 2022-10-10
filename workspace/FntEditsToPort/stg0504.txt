@@ -85,3 +85,10 @@ Message ID / Branch / Sequence: 2138203
 6049000
 6063000
 9998000
+
+======
+10-9-2022 edits; remove references of aliens from soldiers.
+
+* EDIT
+index: 237, 258, 278, 298
+audioID: 300, 321 > 303
