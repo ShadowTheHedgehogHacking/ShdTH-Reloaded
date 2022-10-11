@@ -167,4 +167,4 @@ To play this mod, you must:
 - Link Master, gamemasterplc, CosmoCortney, and TeconMoon
 : for various RAM reference codes and discoveries
 
-And the Heroes & Shadow Hacking Central Discord community for their input, motivation, miscellaneous help, and frienship. We could never have gotten this far without all of you. <3
+And the Heroes & Shadow Hacking Central Discord community for their input, motivation, miscellaneous help, and friendship. We could never have gotten this far without all of you. <3
