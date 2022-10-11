@@ -107,3 +107,64 @@ To play this mod, you must:
 10. The Convert window will appear, click "Convert..." and name it `game.iso` for Nintendont, or `ShdTH-Reloaded.iso` for Dolphin
 11. Move/Save the ISO to the Path Dolphin detects your games. A new ShadowTH-Reloaded entry should appear in your Dolphins game list with greater than 0 filesize. Use this when playing the game
 12. Click View -> Purge Game List Cache if the Reloaded Icon is not appearing on the new entry. If it still does not appear, the files were not properly replaced
+
+# Credits
+### Direct Contributions
+
+- LimblessVector
+: Project Lead
+
+- dreamsyntax
+: Reloaded Co-Hacker, Major Help and Feedback
+
+- TheHatedGravity
+: Model, Movie, and Font Help
+
+- BlazinZzetti
+: Code Contributor and Help
+
+### Thanks
+
+- SEGA and Sonic Team
+: for the original Shadow the Hedgehog
+
+- igorsabra4
+: for Heroes Power Plant and other file reversing help
+
+- Sewer56	
+: for HeroesONE Reloaded and other file reversing help
+
+- MainMemory
+: for HeroesONE
+
+- DonutStopGaming
+: for symbol map and struct research
+
+- metaconstruct, UnclePunch, psiLupan, and DRGN (Melee modding community)
+: for Melee Code Manager and assistance with DOL modification
+
+- Shadowth117
+: Model Help
+
+- SonikkuA
+: Model Help
+
+- aldelaro5
+: for Dolphin Memory Engine
+
+- InternetExplorer
+: for "Intro to Wii Game Modding" guide
+
+- Jos / Josjuice
+: for help with some tricky hardware only exceptions and all the awesome Dolphin work they do
+
+- kiwi515
+: for help fixing weird hardware-only exceptions
+
+- Every Dolphin Contributor
+: for Dolphin and its debug features
+
+- Link Master, gamemasterplc, CosmoCortney, and TeconMoon
+: for various RAM reference codes and discoveries
+
+And the Heroes & Shadow Hacking Central Discord community for their input, motivation, miscellaneous help, and frienship. We could never have gotten this far without all of you. <3
