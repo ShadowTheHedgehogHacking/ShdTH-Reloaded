@@ -60,17 +60,24 @@ There's also some pure bug fixes.
 - AUDIO/FNT | Subtitle timings have been modified to match with the English audio recordings for the EN subtitles
 - AUDIO | GUN Soldiers no longer incorrectly mention Black Arms in The Doom / Lost Impact
 
-
-## Refreshed Art & Extra Music
-And finally, some artistic changes were made to improve the game’s art style and presentation.
-- The menus were updated in a new style
-- The palette of some stages were changed to differentiate them from similar stages
-- Some music tracks that went unused in-game are added
+## Restored Content
+As a bonus, some unused content has been integrated into the game.
+- Unused Music
   - “E.G.G.M.A.N. (Doc Robeatnix Mix)” was added to the Lava Shelter version of the Egg Dealer boss. The Egg Dealer theme still plays in the other Egg Dealer fights
   - “What I Am” by Magna-Fi replaces “Almost Dead” by Powerman 5000 for the GUN Fortress endings
   - “Broken” by Sins of a Divine Mother is added as a unique ending theme to the Black Comet endings, instead of reusing the GUN Fortress ending theme
-  - Devil Doom boss fight music will no longer be interrupted by Shadow getting Dark/Hero Shadow (filling up the meters)
-  - Expert Mode’s ending has a unique theme and credits animation. ;)
+- Unused Dialogue
+  - Some dialogue triggers were restored just by fixing them. Shadow's new opening comment in GUN Fortress was originally positioned too high to trigger, and Doom's comment about Gerald after the first shield generator in Space Gadget had its render distance set too low.
+  - Some stages had unused voice lines for approaching the Goal Ring while the Dark or Hero missions were active, like in Glyphic Canyon and Sky Troops.
+  - Since Shadow is able to switch missions at any time, some new dialogue can now be heard before you would normally get the appropriate mission character, such as Doom's comments on the first Chaos Emerald in Westopolis.
+
+## Refreshed Art
+And finally, some artistic changes were made to improve the game’s art style and presentation.
+- The menus were updated in a new style
+- The palette of some similar looking stages were changed to differentiate them
+- Devil Doom boss fight music will no longer be interrupted by Shadow getting Dark/Hero Shadow (filling up the meters)
+- Expert Mode’s ending has a unique theme and credits animation. ;)
+
 
 ## How to play / Setup
 Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: md5: `fc936c9b0144c925b45b805fd39da2ac`
