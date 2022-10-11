@@ -7,7 +7,7 @@ Shadow the Hedgehog: Reloaded is a quality of life and enhancement mod for the o
 
 Reloaded is for the USA GameCube version, playable via Dolphin emulator (recommended), Nintendont for Wii / Wii U, and Swiss for GameCube (untested).
 
-Reloaded is still in-progress. The project goals are listed below, and are at varying levels of completeness. A more verbose and detailed changelist will be made once the first release is finalized.
+The main features are below, with a more complete changelist being included in the download.
 
 ## Less Tedious Gameplay
 The primary goal is to make the game less tedious and annoying, both on a short and long term scale. This is mainly accomplished by:
@@ -17,18 +17,15 @@ The primary goal is to make the game less tedious and annoying, both on a short 
 - Changing the Expert Mode unlock requirement to unlock after beating Last Story
 - Making slow elevators / platforms / doors and such much faster
 - Cutscenes are always skippable
-- And countless adjustments to stage object layouts, for less haphazard placement
 
 ## More Genuine Challenge
 The secondary goal is to make the game more fun by increasing its challenge and replayability, where appropriate. While the game's artificial difficulty (padded story requirements and inflated mission objectives) is minimized, authentic difficulty is enhanced.
 - All stage rankings are much harder
-- Expert mode is much harder and more unique
 - The Secret Door system was reworked into simply being additional pathways instead of one-time useless bonuses
 - Secret Keys were changed to Red Rings and have been shuffled around here and there
-- And many changes to stage object layouts, for more challenge in some areas
 
 ## Misc. Quality of Life Changes
-Many other miscellaneous annoyances are also addressed
+Many other miscellaneous annoyances are also addressed.
 - Checkpoint collision no longer slows down Shadow
 - Shadow’s Homing Attack homes in much faster and more precise tracking
 - Shadow can now use the Slide move for as long as the melee (B) or (X) button is held down
@@ -43,9 +40,9 @@ Many other miscellaneous annoyances are also addressed
 - The jumping GUN mech has an improved hover ability and more responsive rotation
 - CarType Vehicles can be dismounted mid-air (Brake button is moved to Y button) and are much faster if tapping (A). Holding (A) retains original speed
 - AirSaucer is revamped to be much more responsive. It also no longer has a double jump and instead has a downward spike
-- And many more small changes
 
 ## Fixed Oversights
+There's also some pure bug fixes.
 - GEO | Remove double collisions in Death Ruins
 - GEO | Remove extra/unused geo across multiple stages
 - ENEMY | Artifical Chaos's glowing eyes are 90 degrees off; appearing to the side of the eye sockets
@@ -64,16 +61,10 @@ Many other miscellaneous annoyances are also addressed
 - AUDIO | GUN Soldiers no longer incorrectly mention Black Arms in The Doom / Lost Impact
 
 
-## Refreshed Art
+## Refreshed Art & Extra Music
 And finally, some artistic changes were made to improve the game’s art style and presentation.
 - The menus were updated in a new style
-- The palette of some stages were redone so they would be more vibrant and less dull
-- An optional texture pack of enhanced (not upscaled!) textures was compiled for Dolphin. This pack uses:
-  - Uncompressed textures from the Xbox version,
-  - The highest resolution available for each texture (some stages used low res versions of many textures),
-  - Some imported textures from Sonic Adventure, Sonic Adventure 2, and Sonic Heroes,
-  - And a few custom textures for the remaining edge cases
-- An additional optional texture pack of upscaled textures was made using the above as the basis
+- The palette of some stages were changed to differentiate them from similar stages
 - Some music tracks that went unused in-game are added
   - “E.G.G.M.A.N. (Doc Robeatnix Mix)” was added to the Lava Shelter version of the Egg Dealer boss. The Egg Dealer theme still plays in the other Egg Dealer fights
   - “What I Am” by Magna-Fi replaces “Almost Dead” by Powerman 5000 for the GUN Fortress endings
@@ -84,8 +75,9 @@ And finally, some artistic changes were made to improve the game’s art style a
 ## How to play / Setup
 Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: md5: `fc936c9b0144c925b45b805fd39da2ac`
 
+IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
+
 To play this mod, you must:
-0. Note: It is recommended to use the "Releases" tab rather than doing the below, as the below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements
 1. Build a custom ISO overwriting any files from the `files` folder
 2. Enable Cheats and use provided game config .ini from the `code` folder
 
