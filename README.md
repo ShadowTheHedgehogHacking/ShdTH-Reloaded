@@ -5,7 +5,7 @@
 ## About
 Shadow the Hedgehog: Reloaded is a quality of life and enhancement mod for the original Shadow the Hedgehog.
 
-Reloaded is for the USA GameCube version, playable via Dolphin emulator (recommended), Nintendont for Wii / Wii U, and Swiss for GameCube (untested).
+Reloaded is for the USA GameCube version, playable via Dolphin emulator (recommended), Nintendont for Wii / Wii U, and Swiss for GameCube.
 
 The main features are below, with a more complete changelist being included in the download.
 
