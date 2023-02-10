@@ -31,6 +31,7 @@ Many other miscellaneous annoyances are also addressed.
 - Shadow can now use the Slide move for as long as the melee (B) or (X) button is held down
 - Shadow can be told to JumpDash rather than HomingAttack by holding the (L) button before performing a HomingAttack/JumpDash
 - Shadow can control his DigitalSpline speeds on Digital Circuit and Mad Matrix by holding (A) to speed up or (B) to slow down
+- The player can press Z at any time to change between Reloaded melee-weapon style and the Original game. Shadow will retain this choice until the next time the game is launched.
 - Shadow can now activate melee collision by holding (B) which creates trails. While holding (B), Shadow can also hold (L) to rapidly swing the weapon based on the speed he is moving.
 - If Shadow is holding a melee weapon, he can now slide out of a SpinDash, HomingAttack, or JumpDash with (B). He can still AirAttack with melee weapons but he must double press (B), holding the last (B) to compensate for the attack collision change
 - Shadow can pick a Mission character at any time with Dpad. This will prevent activating other partners. You can restore activating partners you run into by pressing Dpad UP at any time.
@@ -80,7 +81,7 @@ And finally, some artistic changes were made to improve the game’s art style a
 
 
 ## How to play / Setup
-Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: md5: `fc936c9b0144c925b45b805fd39da2ac`
+Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: CRC32: `f582cf1e` or SHA-1: `5dc81ad9c97549394e30bedc252bfa37d4db1de0`
 
 IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
 
@@ -90,7 +91,7 @@ To play this mod, you must:
 
 ### Extraction of Game / FST Format
 
-1. Get the latest beta or dev Dolphin - [dolphin-5.0-17574 or newer recommended](https://dolphin-emu.org/download/)
+1. Get the latest beta or dev Dolphin - [dolphin-5.0-18593 or newer recommended](https://dolphin-emu.org/download/)
 2. Before launching dolphin, create an empty file
    `portable.txt` in the same folder as Dolphin.exe
 3. Open Dolphin
