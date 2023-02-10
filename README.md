@@ -86,7 +86,7 @@ Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: CRC32: `f582cf1e` o
 IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
 
 To play this mod, you must:
-1. Build a custom ISO overwriting any files from the `files` folder
+1. Build a custom ISO overwriting any files from the `ISO EDITS` folder
 2. Enable Cheats and use provided game config .ini from the `code` folder
 
 ### Extraction of Game / FST Format
