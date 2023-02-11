@@ -81,18 +81,41 @@ And finally, some artistic changes were made to improve the game’s art style a
 
 
 ## How to play / Setup
-Please verify you are using a 1:1 ShadowTheHedgehog USA ISO: CRC32: `f582cf1e` or SHA-1: `5dc81ad9c97549394e30bedc252bfa37d4db1de0`
+Please verify you are using a 1:1 ShadowTheHedgehog USA ISO:
 
-IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
+
+CRC32: `f582cf1e`
+
+
+or
+
+
+SHA-1: `5dc81ad9c97549394e30bedc252bfa37d4db1de0`
+
+
+A How-To-Setup video is available here, and though it says v1.0, the setup is the same for v1.1:
+https://youtu.be/uv9gpqEbXU4
 
 To play this mod, you must:
-1. Build a custom ISO overwriting any files from the `ISO EDITS` folder
-2. Enable Cheats and use provided game config .ini from the `code` folder
+1. Download the latest Release (v1.1) - picking if you want 4:3 or 16:9 version
+2. Place your original ShadowTheHedgehog USA in ISO format in the Patcher folder
+3. Rename your ISO to `GUPE8P.iso` if its not already named this.
+4. Run `Apply Patch-Windows.bat` if on Windows, `Apply Patch-Mac.command` if on Mac, `Apply Patch-Linux.sh` if on Linux 
+5. ShdTH-Reloaded.iso should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
+6. It is recommended to also download the `Dolphin Addons` and `Optional Cheats and Preferences` to further customize Reloaded to your liking
+7. From Optional Cheats and Preferences, place the `GUPE8P.ini` file in `Dolphin\User\GameSettings` (or `Documents\Dolphin Emulator\GameSettings` if not in portable mode)
+8. Enable Cheats in Dolphin -> Config. Right click the game the list and choose `Properties` to pick what cheats you want
+9. If playing on original hardware use [CodeManager2](https://github.com/CLF78/CodeManager2) to build GCT files in order to use cheats on hardware. Select the `GUPE8P.ini` file using CodeManager2.
+10. From Dolphin Addons, follow the instructions included with the file to install them and enable the custom textures / graphic mod as you desire
 
-### Extraction of Game / FST Format
+## How to Build Reloaded Yourself
+IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
+1. Build a custom ISO overwriting any files from the `ISO EDITS` folder (below is steps how to do this)
+2. Enable Cheats and use provided game config .ini from the `code` folder - placing the `GUPE8P.ini` file in `Dolphin\User\GameSettings`
 
-1. Get the latest beta or dev Dolphin - [dolphin-5.0-18593 or newer recommended](https://dolphin-emu.org/download/)
-2. Before launching dolphin, create an empty file
+### Extraction of Original Game / FST Format
+1. Get the latest beta or dev Dolphin - [dolphin-5.0-18626 or newer recommended](https://dolphin-emu.org/download/)
+2. (Optional: only do this step if you want to keep config separate) Before launching dolphin, create an empty file
    `portable.txt` in the same folder as Dolphin.exe
 3. Open Dolphin
 4. Right-click Shadow The Hedgehog in the game list
