@@ -98,6 +98,7 @@ https://youtu.be/uv9gpqEbXU4
 
 To play this mod, you must:
 1. Download the latest Release (v1.1) - picking if you want 4:3 or 16:9 version
+### Computer
 2. Place your original ShadowTheHedgehog USA in ISO format in the Patcher folder
 3. Rename your ISO to `GUPE8P.iso` if its not already named this.
 4. Run `Apply Patch-Windows.bat` if on Windows, `Apply Patch-Mac.command` if on Mac, `Apply Patch-Linux.sh` if on Linux 
@@ -107,6 +108,13 @@ To play this mod, you must:
 8. Enable Cheats in Dolphin -> Config. Right click the game the list and choose `Properties` to pick what cheats you want
 9. If playing on original hardware use [CodeManager2](https://github.com/CLF78/CodeManager2) to build GCT files in order to use cheats on hardware. Select the `GUPE8P.ini` file using CodeManager2.
 10. From Dolphin Addons, follow the instructions included with the file to install them and enable the custom textures / graphic mod as you desire
+### Android
+2. Download and install the [ROM Patcher](https://github.com/btimofeev/UniPatcher/releases/latest)
+3. Place your original ShadowTheHedgehog USA in ISO format into a folder
+4. Place the `GUPE8P.iso.vcdiff` from vcdiff folder into a folder
+5. Specify the output file & click the pink floating icon.
+6. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
+7. It is recommended to also download the `Dolphin Addons` and `Optional Cheats and Preferences` to further customize Reloaded to your liking.
 
 ## How to Build Reloaded Yourself
 IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
