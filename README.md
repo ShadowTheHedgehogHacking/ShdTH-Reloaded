@@ -2,10 +2,11 @@
 <img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/master/workspace/res/title_screen.png" align="center" />
 </div>
 
-<video src="https://youtube.com/watch?v=1yM2kJjyhZQ"></video>
-
 ## About
 Shadow the Hedgehog: Reloaded is a quality of life and enhancement mod for the original Shadow the Hedgehog.
+
+Release video:
+https://youtu.be/1yM2kJjyhZQ
 
 Reloaded is for the USA GameCube version, playable via Dolphin emulator (recommended), Nintendont for Wii / Wii U, and Swiss for GameCube.
 
