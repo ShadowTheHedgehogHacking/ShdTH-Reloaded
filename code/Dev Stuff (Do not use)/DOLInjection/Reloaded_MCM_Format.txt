@@ -155,6 +155,7 @@ NTSC 1.06 --- 0x801D3B50 ---- 808D4518 -> Branch
 
 Expert Select
 Press X instead of A when locking in a stage on the Select menu to play the Expert version.
+TODO: Update with Zetti's fix in SX preventing expert progression bypass
 [LimblessVector]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x80206334 ---- 987F0059 -> Branch
@@ -282,16 +283,27 @@ NTSC 1.06 ---- 0x168D74 ----- 7C00D000 -> 60000000
 	-==-
 
 
-Hold L to JumpDash instead of HomingAttack v2
-Does checks on PAD1 only
-Future version will be controller/player independent
+Hold L to JumpDash instead of HomingAttack v3
+v3 adds player independent controls
 v2 restores console compatibility
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x99BE4 ------ 5460063F -> Branch
+NTSC 1.06 --- 0x800A0324 ---- 5460063F -> Branch
 
-5460063F 41820020
+5460063F 41820080
+3DE0807D 61EF71A0
+820F0000 82100000
+82100224 3ADF0004
+82D60000 82D60224
+7C10B000 4182002C
+39EF0008 820F0000
+82100000 82100224
+3ADF0004 82D60000
+82D60224 7C10B000
+41820014 40820030
 3E008056 6210ED4E
+41820010 3E008056
+6210ED7A 41820004
 8A100000 2C100010
 4082000C 3A000001
 2C100001 00000000
@@ -372,21 +384,31 @@ NTSC 1.06 ---- 0x1A6830 ----- D03F00E4 -> 60000000
 	-==-
 
 
-Circuit Speed Control
+Circuit Speed Control v2
 While riding one of the circuits in Digital Circuit or Mad Matrix, hold A to go double speed, or hold B to go half speed.
+v2 adds player independent controls
 [dreamsyntax, LimblessVector]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x6FC74 ------ FFE00890 -> Branch
+NTSC 1.06 --- 0x800763AC ---- C00D2F18 -> Branch
 
-FFE00890 3C608056
-6063ED4C 88630003
-706F0001 2C0F0001
-41820014 706F0002
+3DE0807D 61EF71A0
+81EF0000 81EF0000
+81EF022C 81EF0030
+7C0FF800 41820008
+40820018 3E00805E
+6210E358 3EC08056
+62D6ED4C 48000018
+3E008051 62106CEC
+3EC08056 62D6ED78
+48000004 8AD60003
+72CF0001 2C0F0001
+41820014 72CF0002
 2C0F0002 41820010
-40820014 3C6044C8
-41820010 3C6043C8
-41820008 3C604448
-906D2F18 00000000
+40820014 3EC044C8
+41820010 3EC043C8
+41820008 3EC04448
+C0100000 92D00000
+60000000 00000000
 
 
 	-==-
@@ -1351,18 +1373,26 @@ NTSC 1.06 --- 0x800B7E20 ---- 7FE3FB78 -> Branch
 	-==-
 
 
-Holdable Slide
+Holdable Slide v2
 The player can slide as long as B or X are held, with no minimum or maximum slide time. Exception: sliding off a ledge.
+v2 adds player independent controls
 [dreamsyntax, LimblessVector]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x8008DC2C ---- FC010040 -> Branch
 
-3DE08057 61EF5D5F
-89EF0000 2C0F0002
-41820014 2C0F0008
-4182000C C00291C8
-4800000C 3DE08000
-C00F000C 00000000
+3DE0807D 61EF71A0
+81EF0000 81EF0000
+81EF022C 81EF0030
+7C0FF800 41820008
+40820010 3DE08057
+61EF5D5F 48000010
+3DE08057 61EF5D87
+48000004 89EF0000
+2C0F0002 41820014
+2C0F0008 4182000C
+C00291C8 4800000C
+3DE08000 C00F000C
+60000000 00000000
 
 
 	-==-
