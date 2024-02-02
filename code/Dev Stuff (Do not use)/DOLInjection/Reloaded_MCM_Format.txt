@@ -667,15 +667,13 @@ NTSC 1.06 ---- 0x9ADD8 ------ 38600000 -> Branch
 	-==-
 
 
-Global Lock-On Revamp v3
+Global Lock-On Revamp v4
 Increases fire and target rate of lock-on weapons
-
-Reduces lock-on range/width, requiring more fine aiming to initially lock-on.
+Reverts width change from v3
 [dreamsyntax, LimblessVector]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x5771A0 ----- 3DCCCCCD -> 3E99999A
--------------- 0x5771A4 ----- 00000000 -> 3E333333
--------------- 0x57719C ----- 3F708F86 -> 3F7AE148
+NTSC 1.06 --- 0x805F2000 ---- 3DCCCCCD -> 3E99999A
+------------- 0x805F2004 ---- 00000000 -> 3E333333
 
 
 	-==-
