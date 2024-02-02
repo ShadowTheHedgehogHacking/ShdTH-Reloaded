@@ -125,7 +125,7 @@ IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The bel
 2. Enable Cheats and use provided game config .ini from the `code` folder - placing the `GUPE8P.ini` file in `Dolphin\User\GameSettings`
 
 ### Extraction of Original Game / FST Format
-1. Get the latest beta or dev Dolphin - [dolphin-5.0-18626 or newer recommended](https://dolphin-emu.org/download/)
+1. Get the latest beta or dev Dolphin - [dolphin-5.0-20347 or newer recommended](https://dolphin-emu.org/download/)
 2. (Optional: only do this step if you want to keep config separate) Before launching dolphin, create an empty file
    `portable.txt` in the same folder as Dolphin.exe
 3. Open Dolphin
