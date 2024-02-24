@@ -1,0 +1,1371 @@
+3 Endings unlocks Last Story
+The game will require only 3 or more unique endings to be finished to unlock Last Story, rather than the usual 10.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x2CAA70 ----- 2803000A -> 28030003
+
+
+	-==-
+
+
+Always Skippable Cutscenes
+Allows you to always skip cutscenes by default.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80174380 ---- 41820010 -> 60000000
+------------- 0x802D29A0 ---- 41820010 -> 60000000
+
+
+	-==-
+
+
+Title always skippable
+Allows you to always press start to skip the title screen animation.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x2B7808 ----- 4182002C -> 4800002C
+
+
+	-==-
+
+
+Missions Unlocked
+Missions can always be switched, regardless if you've met the mission character or not.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0xB5A0C ------ 88030014 -> Branch
+
+38000001 98030014
+88030014 00000000
+
+
+	-==-
+
+
+Mission Focus
+By manually switching your active mission with the d-pad or pause menu, you become "focused", ignoring mission characters from joining you automatically as you pass them. To un-focus, you can press up on the d-pad, or restart/change the stage.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8016DFDC ---- 7FA3EB78 -> 41820008
+------------- 0x8016DFD8 ---- 809D0024 -> Branch
+
+3DE0805F 89EF3CA7
+2C0F0001 41820008
+809D0024 7FA3EB78
+60000000 00000000
+
+------------- 0x80073CB8 ---- 57C0063F -> Branch
+
+3de0805f 89ef3ca7
+2c0f0001 41820008
+57c0063f 00000000
+
+------------- 0x8016DF58 ---- 38800001 -> Branch
+
+38800001 3de0805f
+3a000000 9a0f3ca7
+60000000 00000000
+
+------------- 0x8016E134 ---- 80830020 -> Branch
+
+80830020 3de0805f
+3a000000 9a0f3ca7
+60000000 00000000
+
+------------- 0x801E39B4 ---- 809C0034 -> Branch
+
+809c0034 3de0805f
+3a000001 9a0f3ca7
+60000000 00000000
+
+------------- 0x800A1BB4 ---- 7C7D1B78 -> Branch
+
+7c7d1b78 548004e6
+2c000000 4182000c
+3a000000 48000014
+5480052c 2c000000
+41820010 3a000001
+3de0805f 9a0f3ca7
+60000000 00000000
+
+
+	-==-
+
+
+Death Counter System
+Replaces the life counter with a death counter; instead of counting your remaining lives, the game counts your accumulated deaths.
+Gaining a 1-up will reduce the counter by 1.
+While in Expert Mode (not via Select), the lives system functions as original.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8016F068 ---- 38000005 -> 38000000
+------------- 0x8016F05C ---- 80030094 -> 38000000
+------------- 0x80351CA8 ---- 2C000000 -> 2c00ff80
+------------- 0x801E2FC4 ---- 2C030000 -> 2c03ff80
+------------- 0x80178D20 ---- 3880FFFF -> 38800000
+------------- 0x80178D44 ---- 38800005 -> 38800000
+------------- 0x80178BCC ---- 2C030000 -> 2c03ff80
+------------- 0x802FB6F8 ---- 2C030000 -> 2C030003
+------------- 0x802FB6FC ---- 40820024 -> 41800024
+------------- 0x80178BD8 ---- 3880FFFF -> Branch
+
+3880FFFF 3DE0805E
+61EFC170 81EF0000
+2C0F0006 41820008
+38800001 00000000
+
+------------- 0x8009B5FC ---- 38800001 -> Branch
+
+38800001 3DE0805E
+61EFC170 81EF0000
+2C0F0006 41820008
+3880FFFF 00000000
+
+------------- 0x802044A0 ---- 2C000000 -> Branch
+
+3DE0805E 61EFC170
+81EF0000 2C0F0006
+41820008 3800FF80
+2C000000 00000000
+
+
+	-==-
+
+
+Unique themes for Black Comet ending and Lava Shelter boss
+Plays a unique song for Black Comet endings, rather than reusing GUN Fortress'. Currently plays the unused song "Broken".
+For the Lava Shelter versions of the Egg Dealer boss only, the EGGMAN remix will play instead of the Egg Dealer boss theme.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x801D3B50 ---- 808D4518 -> Branch
+
+808D4518 81ED4518
+2C0F0263 4181000C
+3A000032 48000008
+3A000036 3EC08051
+9A160EA0 3A000033
+2C0F0266 41820008
+3A000032 3EC0804D
+9A16044A 3EC0804E
+9A163626 00000000
+
+
+	-==-
+
+
+Expert Select
+Press X instead of A when locking in a stage on the Select menu to play the Expert version.
+TODO: Update with Zetti's fix in SX preventing expert progression bypass
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80206334 ---- 987F0059 -> Branch
+
+3DE08056 61EFED54
+89EF0003 71EF0008
+2C0F0008 40820008
+38600001 987F0059
+38600000 00000000
+
+------------- 0x801E33BC ---- 901F00A0 -> Branch
+
+3DE0805E 61EFC173
+89EF0000 2C0F0006
+40820008 901F00A0
+60000000 00000000
+
+------------- 0x8016F018 ---- 901F0000 -> Branch
+
+3DE0805E 61EFC173
+89EF0000 2C0F0006
+41820008 38000000
+901F0000 00000000
+
+
+	-==-
+
+
+Expert Ending v2
+:)
+v2 fixes Library
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802CF1DC ---- 906D0D30 -> Branch
+
+2C030006 3DE08051
+41820014 38000033
+3E007366 62106400
+48000010 38000034
+3E00666C 62106F00
+980F0EE4 920F0FB2
+920F0FBE 920F0FCA
+920F0FE2 920F0FEE
+3DE0805F 61EF628B
+920F3FC0 3C002020
+60002000 7E008050
+920F0000 3DE0804D
+920F6D7E 920F6D8A
+920F6D96 920F6DAE
+920F6DBA 906D0D30
+60000000 00000000
+
+
+	-==-
+
+
+Select Mode Shortcut
+Press X on the startup message to skip directly to Select Mode.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x2AFD44 ----- 80630000 -> Branch
+
+81E30000 2C0F0009
+40820038 3DE08057
+61EF2D94 81EF0000
+2C0F0000 40820024
+3DE08056 61EFED54
+89EF0003 71EF0008
+2C0F0008 4082000C
+39E00006 91E30000
+80630000 00000000
+
+
+	-==-
+
+
+Custom Autosave Colors
+Tweaks the autosave message's colors.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x574FE8 ----- FFFF00FF -> ffd200ff
+-------------- 0x574FF0 ----- 000050DC -> 0c134ddc
+-------------- 0x574FF4 ----- 101080DC -> 230eb6dc
+
+
+	-==-
+
+
+Ghost Red Rings
+Once you collect all 5 Red Rings in a stage, they'll come back as ghost Red Rings to recollect.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x11574C ----- 80010014 -> Branch
+
+3884FFFC 7C05202E
+2C00FFFF 4182003C
+3884FFFC 2C04FFFC
+4181FFEC 3DE0804C
+38800032 988F26CE
+3DE0FFFF 61EFFFFF
+91E50000 91E50004
+91E50008 91E5000C
+91E50010 48000010
+3DE0804C 38800074
+988F26CE 80010014
+60000000 00000000
+
+-------------- 0x1156B0 ----- 7C66012E -> Branch
+
+2C03FFFF 41820008
+7C66012E 00000000
+
+
+	-==-
+
+
+Respawn at last activated checkpoint
+Instead of respawning at the checkpoint with the highest ID that's been activated, the player instead respawns at the most recent checkpoint activated. This makes respawning in non-linear stages more intuitive.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x168D74 ----- 7C00D000 -> 60000000
+-------------- 0x168D78 ----- 40800008 -> 60000000
+
+
+	-==-
+
+
+Hold L to JumpDash instead of HomingAttack v4
+v4 fixes partner controlled NPC bug
+v3 adds player independent controls
+v2 restores console compatibility
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800A0324 ---- 5460063F -> Branch
+
+5460063F 41820090
+3DE0807D 61EF71A0
+820F0000 82100000
+82100224 3ADF0004
+82D60000 82D60224
+7C10B000 41820034
+39EF0008 820F0000
+2C100000 41820054
+82100000 82100224
+3ADF0004 82D60000
+82D60224 7C10B000
+41820014 40820038
+3E008056 6210ED4E
+41820010 3E008056
+6210ED7A 41820004
+8A100000 2C100010
+40820014 3A000001
+2C100001 41820008
+5460063F 00000000
+
+
+	-==-
+
+
+Disable Slide on B-press on ground for melee and state extension
+Disables sliding with B button if melee weapon held
+Enables slide while holding a melee weapon in these states:
+- Spindash
+- HomingAttack
+- JumpDash
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800A0238 ---- 5460063F -> Branch
+
+3E00807D 621071A0
+82100000 82100000
+82D00238 56CF273E
+2C0F0008 40820054
+82D60034 2C160000
+41820048 82D60018
+2C160005 4082003C
+82D0022C 82D60030
+82D60010 39E00001
+2C160006 4182001C
+2C160008 41820014
+2C160012 4182000C
+2C0F0001 41820010
+2C0F00EE 40820008
+5460063F 00000000
+
+
+	-==-
+
+
+No Tri-Jump Exit v2
+Removes the Tri-Jump Exit state
+v2 properly escapes endless distance on tri-jump exit
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x8C618 ------
+
+807F0004 38800000
+386300A8
+
+ -> 
+
+C00292A8 EC000028
+4BFFFFC0
+
+
+	-==-
+
+
+No Skidding
+Disables Shadow's skid (the sliding brake he does when the player pulls back on the control stick).
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x7CBF8 ------ 41820020 -> 48000020
+
+
+	-==-
+
+
+GUNMech Physics Revamp
+GUN Mechs' hover travels much faster, they turn tighter, and are dismountable in mid-air.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x1A6830 ----- D03F00E4 -> 60000000
+-------------- 0x1A6834 ----- D01F00E8 -> 60000000
+-------------- 0x1A65BC ----- EC210024 -> 60000000
+-------------- 0x1A8070 ----- 41820024 -> 60000000
+
+
+	-==-
+
+
+Circuit Speed Control v2
+While riding one of the circuits in Digital Circuit or Mad Matrix, hold A to go double speed, or hold B to go half speed.
+v2 adds player independent controls
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800763AC ---- C00D2F18 -> Branch
+
+3DE0807D 61EF71A0
+81EF0000 81EF0000
+81EF022C 81EF0030
+7C0FF800 41820008
+40820018 3E00805E
+6210E358 3EC08056
+62D6ED4C 48000018
+3E008051 62106CEC
+3EC08056 62D6ED78
+48000004 8AD60003
+72CF0001 2C0F0001
+41820014 72CF0002
+2C0F0002 41820010
+40820014 3EC044C8
+41820010 3EC043C8
+41820008 3EC04448
+C0100000 92D00000
+60000000 00000000
+
+
+	-==-
+
+
+Jump Ball Turn Speed
+6.5->25
+Increased. Player turns faster while in jump ball.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x577928 ----- 40D00000 -> 41c80000
+
+
+	-==-
+
+
+Chaos Blast Damage
+12->36
+*Increased. Kills all normal enemies in one hit.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x51D200 ----- 41400000 -> 42100000
+
+
+	-==-
+
+
+Jump Attack Friction
+10->4
+Lowered. Shadow carries a little more momentum before coming to a stop when he attacks in midair (with a weapon or with a melee kick).
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x56CE88 ----- 41200000 -> 40800000
+
+
+	-==-
+
+
+Light Dash ValidRing Angle
+Increased. While already Light Dashing, Shadow checks in a wider angle for the next ring to dash to.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x5779AC ----- 42340000 -> 42960000
+
+
+	-==-
+
+
+Homing Attack Speed
+1000->2000
+Increased. Shadow will home in on targets faster.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x5778C0 ----- 447A0000 -> 44fa0000
+
+
+	-==-
+
+
+Homing Attack Turn Strength
+8->16
+Increased to compensate for increased homing attack speed.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x5778C4 ----- 41000000 -> 41800000
+
+
+	-==-
+
+
+Triangle Jump Recover Time
+0.125->0.000001
+Lowered. Shadow can do another triangle jump immediately upon landing.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x577AFC ----- 3E000000 -> 358637bd
+
+
+	-==-
+
+
+Triangle Jump Speed
+450->1000
+Increased. Triangle Jumps travel faster.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x577B18 ----- 43E10000 -> 447a0000
+
+
+	-==-
+
+
+WallRun Speed
+500->550
+Increased. Shadow wall runs faster.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x577AF8 ----- 43FA0000 -> 44098000
+
+
+	-==-
+
+
+Walk Turn Speed
+15->20
+Increased. Shadow turns faster when walking and standing.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x57782C ----- 41700000 -> 41a00000
+
+
+	-==-
+
+
+Heal Unit Explosion Hitbox Size
+20->45
+Increased. The explosion from a heal unit or heal gun now has a larger effect radius.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x578B78 ----- 41A00000 -> 42340000
+
+
+	-==-
+
+
+Instant HealUnit/BombUnit Server Respawn
+Respawn Time
+4s -> 0s
+for Heal Unit/Bomb Unit Server/Spawner
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x57EB98 ----- 40800000 -> 00000000
+
+
+	-==-
+
+
+Coaster/Zipline Fix Bad Collision v3
+Fixes coli type which prevents shadow from shooting or being shot while on coasters
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x12D114 ----- 38C00100 -> 3CC00004
+
+
+	-==-
+
+
+Pulley Speed
+0.18->0.25
+Increased. Pulleys raise and lower faster.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x57923C ----- 3E3851EC -> 3e800000
+
+
+	-==-
+
+
+Idle Chatter Tweak
+Idle Repeat Timer: 20->15
+Idle Timer: 10->7.5
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x577D5C ----- 41A00000 -> 41700000
+-------------- 0x577D84 ----- 41200000 -> 40F00000
+
+
+	-==-
+
+
+Triple Spring Origin Shift
+Adjusts the triple spring origin point.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x578CBC ----- 41200000 -> 40a00000
+
+
+	-==-
+
+
+Keep Melee Weapons when Mounting Vehicles
+Shadow will on longer drop melee weapons when mounting vehicles.
+Does not allow for picking up melee weapons while already in a vehicle.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x78420 ------ 4082001C -> 4800001c
+
+
+	-==-
+
+
+Super AirSaucer v2
+Supes up Air Saucer vehicle.
+RotSpeed 250 -> 8000
+GroundSpeed 270 -> 540
+AirSpeed 220 -> 440
+JumpStrength 100 -> 200
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x57AB24 ----- 437A0000 -> 45fa0000
+-------------- 0x57AB44 ----- 43870000 -> 44070000
+-------------- 0x57AB54 ----- 435C0000 -> 43dc0000
+-------------- 0x57AAE4 ----- 42C80000 -> 43480000
+
+
+	-==-
+
+
+AirSaucer Replace Second Jump with Stomp
+Makes the second jump of the air saucer have downward force instead.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x1AB03C ----- C022C264 -> Branch
+
+C022C264 EC21082A
+FC200850 00000000
+
+
+	-==-
+
+
+LightDash Transition Expansion
+Transitions added:
+SkyDive/Launched -> LightDash
+JumpDash -> LightDash
+HomingJump -> LightDash
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x9ADD8 ------ 38600000 -> Branch
+
+3DE0807D 61EF71A0
+81EF0000 81EF0000
+81EF022C 81EF0030
+81EF0010 2C0F0006
+41820018 2C0F0009
+41820010 2C0F0017
+41820008 40820014
+3DE0800A 61EF1520
+7DE803A6 4E800020
+38600000 00000000
+
+-------------- 0x83D58 ------ 38600000 -> Branch
+
+3DE0807D 61EF71A0
+81EF0000 81EF0000
+81EF022C 81EF0030
+81EF0010 2C0F0006
+41820018 2C0F0009
+41820010 2C0F0017
+41820008 40820014
+3DE08008 61EFA4A0
+7DE803A6 4E800020
+38600000 00000000
+
+
+	-==-
+
+
+Global Lock-On Revamp v4
+Increases fire and target rate of lock-on weapons
+Reverts width change from v3
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x805F2000 ---- 3DCCCCCD -> 3E99999A
+------------- 0x805F2004 ---- 00000000 -> 3E333333
+
+
+	-==-
+
+
+EscapePlane Stat Adjustment
+Removes invuln frames for EscapePlane
+And balances HP
+Health 800 -> 2200
+Phase 2 600 -> 1600
+Phase 3 400 -> 1000
+Phase 4 200 -> 300
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802556A0 ---- 418100D8 -> 60000000
+------------- 0x805F76C8 ---- 44480000 -> 45098000
+------------- 0x805F76C0 ---- 44160000 -> 44C80000
+------------- 0x805F76BC ---- 43C80000 -> 447A0000
+------------- 0x805F76B8 ---- 43480000 -> 43960000
+
+
+	-==-
+
+
+EggBalloon Stat Adjustment
+Removes invuln frames for EggBalloon
+And balances HP
+Health 400 -> 1100
+Phase 2 300 -> 800
+Phase 3 200 -> 500
+Phase 4 100 -> 200
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x801468C4 ---- 41810100 -> 60000000
+------------- 0x805F45F8 ---- 43C80000 -> 44898000
+------------- 0x805F45F0 ---- 43960000 -> 44480000
+------------- 0x805F45EC ---- 43480000 -> 43FA0000
+------------- 0x805F45E8 ---- 42C80000 -> 43480000
+
+
+	-==-
+
+
+SolidCollision Triggers are GroundCollision
+Turns SollidCollision Trigger object collision into ground collision
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x116A34 ----- 3BC00102 -> 3BC00101
+
+
+	-==-
+
+
+Time Bonus Penalty Always Active
+In original times < 1:30 would be worth 50000 time bonus
+Now 50000 is at 0:00 and every second has a -80 point penalty
+This will only be noticable for times < 1:30
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x1FC000 ----- 40800014 -> 48000014
+
+
+	-==-
+
+
+Last Way & Devil Doom in Select Menu v2
+Last Way is below Final Haunt
+Devil Doom is to the right of Last Way
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x2B8CC0 ----- 3860FFFF -> Branch
+
+2C1D0005 40820020
+39E0FFFF 7C1C7800
+41820014 3DE0802B
+61EFF408 7DE803A6
+4E800020 3860FFFF
+60000000 00000000
+
+-------------- 0x4FC700 ----- FFFFFFFF -> 0000001B
+-------------- 0x4FC7A0 ----- 426C6163 -> 0000002C
+
+
+	-==-
+
+
+CarType Vehicles Revamp r3
+Brake is now set to Y button
+Dismount with X button at any time
+Tap 'jump' to accelerate faster in vehicles
+Tap 'jump' in air to make further distances
+Tap 'jump' always for optimal speed!
+
+r2 fixes the bug where vehicles do not work sometimes
+r3 moves brake to Y and allows dismounting anywhere
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x1B7180 ----- EC010024 -> 60000000
+-------------- 0x1B6CB4 ----- 418200A8 -> 60000000
+-------------- 0x1B7318 ----- 40800010 -> 60000000
+-------------- 0x1B71E8 ----- 54000738 -> 5400e7fe
+-------------- 0x1B71EC ----- 28000008 -> 28000001
+
+
+	-==-
+
+
+Enemy AppearType WARP Faster Spawn
+Adjusts enemies with WARP AppearType to appear faster
+GUN Robot
+EggPawn (point to GR)
+BkSoldier
+1 -> 0.25
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x57A6B0 ----- 3F800000 -> 3E800000
+-------------- 0x176D70 ----- C002B8BC -> C002BE30
+-------------- 0x57A480 ----- 3F800000 -> 3E800000
+
+
+	-==-
+
+
+Restore EggBreaker0411 Digitize Effect
+Restores the EggBreaker glow effect during gameplay in Mad Matrix EggBreaker Boss
+Seems to have been cut for framerate/mem savings
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x2A4C5C ----- 98C5024A -> 60000000
+-------------- 0x2A4E44 ----- 98C5024A -> 60000000
+
+
+	-==-
+
+
+The Last Way Inclusive Scoring
+Hero / Dark points count as additional normal points on The Last Way stage
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8016F5FC ---- 90030004 -> Branch
+
+90030004 3DE08057
+61EFD748 81EF0000
+2C0F02BC 40820010
+80030000 7C002A14
+90030000 00000000
+
+------------- 0x8016F60C ---- 90030008 -> Branch
+
+90030008 3DE08057
+61EFD748 81EF0000
+2C0F02BC 40820010
+80030000 7C002A14
+90030000 00000000
+
+
+	-==-
+
+
+Devil Doom Ring Spawn Adjustment
+Sets Devil Doom's timer until ring balloons stop spawning from 10 minutes to 4 minutes.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x57E9C8 ----- 44160000 -> 43700000
+
+
+	-==-
+
+
+ElecCode Enemy Faster Movement Speed
+Makes ElecCode enemies threatening
+50 -> 350
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x579B30 ----- 42480000 -> 43AF0000
+
+
+	-==-
+
+
+The Last Way idle lines
+Edits the idle lines to include some of the unused dialogue for The Last Way.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x506914 -----
+
+000001B7 000001B8
+000001E6 000001E6
+
+ -> 
+
+000001e6 000001e6
+000001e7 000001e8
+
+
+	-==-
+
+
+Cannon & Lock On Weapons No Knockback
+Cannon and Lock On type weapons won't cancel your running momentum when you fire them.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x236C70 ----- 4BDD7A6D -> 60000000
+-------------- 0x235510 ----- 4BDD91CD -> 60000000
+
+
+	-==-
+
+
+Bloom Reduction (Reloaded Default)
+Bloom intensity multiplier. Lessens the bloom effect to a more reasonable level.
+If you'd like a custom amount, then replace the second half of this code with a floating point number, in hexadecimal.
+Examples:
+0.25 : 3e800000
+0.375: 3ec00000
+0.5  : 3f000000
+0.95 : (default)
+[TheHatedGravity]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x567C30 ----- 3F733333 -> 3ec00000
+
+
+	-==-
+
+
+Melee Weapon Core Revamp v2
+!!REQUIRES SHADOW.MTP MODIFICATION!!
+
+Changing melee to be an extension of Player::Ground rather than its own state
+
+- Hold B to activate the weapon mask
+- While holding B, press and hold L to have shadow attack rapidly
+- Switch to original melee by pressing (Z) at any time - your choice persists until next game init
+- uses 'Player::Ground' physics
+- Allows for melee held + attack held to create EffectMask + DamageColi extra range while jumping
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80067B5C ---- 807F0040 -> 38600000
+------------- 0x8051A10C ---- 31313031 -> 3DCCCCCD
+------------- 0x800B3A20 ---- 901E0424 -> Branch
+
+3E00807D 621071A0
+82100000 82100000
+82100238 560F273E
+2C0F0008 40820044
+82100034 2C100000
+41820038 82100018
+2C100005 4082002C
+3E008057 62105D5E
+89F00000 2C0F0010
+40820018 3A100001
+89F00000 2C0F0002
+40820008 3800FFFF
+901E0424 00000000
+
+------------- 0x800B39F8 ---- D01E043C -> Branch
+
+3E00807D 621071A0
+82100000 82100000
+82100238 560F273E
+2C0F0008 4082005C
+82100034 2C100000
+41820050 82100018
+2C100005 40820044
+3E008057 62105D5E
+89F00000 2C0F0010
+40820030 3A100001
+89F00000 2C0F0002
+40820020 3E008051
+6210A114 8A100000
+2C100001 4182000C
+EC00002A EC000032
+D01E043C 00000000
+
+------------- 0x800C6344 ---- 5720063F -> Branch
+
+5720063F 4182003C
+3DE08057 61EFD734
+C00F0000 3DE08051
+61EFA108 C02F0000
+FC000840 4180001C
+3A0F0004 C0300000
+EC00082A D00F0000
+39E00001 2C0F0001
+60000000 00000000
+
+------------- 0x80176E84 ---- 9421FFC0 -> Branch
+
+9421FFC0 3DE08051
+61EFA108 3A000001
+920F0000 00000000
+
+------------- 0x8051A114 ---- 53465356 -> 00000000
+------------- 0x800A8600 ---- 38000016 -> Branch
+
+8A04000B 2C100020
+40820024 3E008051
+6210A114 89F00000
+2C0F0000 39E00001
+41820008 39E00000
+99F00000 38000016
+60000000 00000000
+
+------------- 0x800AA29C ---- 2C030005 -> Branch
+
+2C030005 40820014
+3E008051 6210A114
+89F00000 2C0F0001
+60000000 00000000
+
+------------- 0x8009F260 ---- 2C030005 -> Branch
+
+2C030005 4082001C
+3E008051 6210A114
+89F00000 2C0F0001
+41820008 38600009
+60000000 00000000
+
+------------- 0x800B3A0C ---- 901E0420 -> Branch
+
+3E00807D 621071A0
+82100000 82100000
+82100238 560F273E
+2C0F0008 40820058
+82100034 2C100000
+4182004C 82100018
+2C100005 40820040
+3E008057 62105D5E
+89F00000 2C0F0010
+4082002C 3A100001
+89F00000 2C0F0002
+4082001C 3E008051
+6210A114 8A100000
+2C100001 41820008
+38000089 2C050000
+901E0420 00000000
+
+
+	-==-
+
+
+Melee Ammo Adjustments
+Adjusts melee ammo received on pickup
+
+Katana LV1 4 -> 18
+Katana LV2 8 -> 32
+Black Sword 6 -> 18
+Torch 4 -> 12
+LastWay Env Weapon 4 -> 12
+EggSpear 6 -> 18
+Survival Knife 6 -> 18
+Dark Hammer 6 -> 18
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8054D308 ---- 00000008 -> 00000020
+------------- 0x8051E8AC ---- 00000006 -> 00000012
+------------- 0x80547D54 ---- 00000004 -> 0000000C
+------------- 0x8051F738 ---- 00000004 -> 0000000C
+------------- 0x8051F054 ---- 00000006 -> 00000012
+------------- 0x8051F000 ---- 00000006 -> 00000012
+------------- 0x80559DEC ---- 00000006 -> 00000012
+------------- 0x8054D2D8 ---- 00000004 -> 00000012
+
+
+	-==-
+
+
+Disable Partner Intro
+Disables the intro camera event when you meet a partner in the stage
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x6D6D0 ------ 4082004C -> 4800004c
+
+
+	-==-
+
+
+Select Mode cursor no reset
+The stage select cursor won't reset to Westopolis every time you return to the Select Mode screen.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x2C1760 -----
+
+38A00000 38834560
+38600002 38000005
+90A40000 90640004
+98A40008 9004000C
+98A40010
+
+ -> 
+
+38834560 83440000
+2C1A0000 40820018
+83440004 2C1A0000
+4082000C 38600002
+90640004
+
+
+	-==-
+
+
+LightDash Exit State Change to Launched & Remove Radial Blur for Westopolis
+For Westopolis Only
+Allows for SkyDive to persist after light dashing
+Removes RadialBlur Effect from Launched::End as well
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x801FA2DC ---- 9421FFC0 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F0064
+40820008 4E800020
+9421FFC0 00000000
+
+------------- 0x80089F34 ---- 38000002 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F0064
+38000017 41820008
+38000002 00000000
+
+
+	-==-
+
+
+Devil Doom Boss Has No Awake Music
+Disables the awake theme (dark/hero shadow idle) for Devil Doom stage
+Compatible with 'disable all awake' as it changes different calls
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800A4FEC ---- 807E0010 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F02C6
+38600007 41820008
+807E0010 00000000
+
+------------- 0x800A4D80 ---- 807D0010 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F02C6
+38600000 41820008
+807D0010 00000000
+
+
+	-==-
+
+
+Light Dash ValidRing Distance
+80->100
+Increased. While already Light Dashing, Shadow checks further ahead for the next ring to dash to.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008A600 ---- C0029144 -> 3DE042C8
+------------- 0x8008A604 ---- D00D3020 -> 91ED3020
+
+
+	-==-
+
+
+Slide Steer
+2->4
+Increased. Shadow has more turn control while sliding.
+Does not copy for behavior::end, only while sliding
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008DADC ---- C00291C0 -> C00281D0
+------------- 0x8008DBC8 ---- C00291C0 -> C00281D0
+
+
+	-==-
+
+
+Slide Run Threshhold
+200->75
+Lowered. Shadow can slide instead of spindash at a lower run speed.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800840A0 ---- C022901C -> 3DE04296
+------------- 0x800840AC ---- D02D2FD4 -> 91ED2FD4
+
+
+	-==-
+
+
+Spindash Startup Delay
+0.25->1
+Increased, but spindash should be releasable sooner.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008F7B8 ---- C0029224 -> 3DE03F80
+------------- 0x8008F7C0 ---- D00D3074 -> 91ED3074
+
+
+	-==-
+
+
+Strafe Walk Speed
+30->55
+Increased. Shadow's strafe walk speed is higher.
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800840A4 ---- C0028F88 -> 3E00425C
+------------- 0x800840B0 ---- D00D2FD8 -> 920D2FD8
+
+
+	-==-
+
+
+Red Slime Speed
+340->425
+Increased. Shadow travels faster through red slime.
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x805F2570 ---- 43AA0000 -> 43D48000
+
+
+	-==-
+
+
+Skippable Logos (ASM)
+Pressing Start now skips the intro logos.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802B6480 ---- 7C7F1B78 -> Branch
+
+7C7F1B78 81E30000
+2C0F000A 40820020
+3DE08056 61EF76AA
+81EF76AA 2C0F0400
+4082000C 39E00008
+91FF0000 00000000
+
+
+	-==-
+
+
+Beating Last Story unlocks Expert (ASM)
+Expert Mode will unlock after you defeat Devil Doom, rather than requiring every A-rank.
+
+Add bugfix for A rank not calculating
+[LimblessVector, dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802D11A0 ---- 3880000A -> Branch
+
+3880000A 39E00001
+99E3FFB9 00000000
+
+------------- 0x80204FB8 ---- 408200C4 -> 60000000
+------------- 0x80205078 ---- 9BBF16C9 -> 60000000
+
+
+	-==-
+
+
+Advanced Full Widescreen v5 with UI/GNCP Code
+Do not use with Dolphin Widescreen Hack
+Requires .gncp patches from:
+https://github.com/ShadowTheHedgehogHacking/Widescreen-ShadowTH
+[dreamsyntax, Dolphin Wiki]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x805F67A0 ---- 42F00000 -> C1700000
+------------- 0x805F67A8 ---- 44020000 -> 44250000
+------------- 0x805F67E0 ---- 440C0000 -> 442F0000
+------------- 0x805F67D0 ---- 42A80000 -> C2600000
+------------- 0x805F67F0 ---- 429C0000 -> C2780000
+------------- 0x80343228 ---- 9421FEA0 -> 4E800020
+------------- 0x804AB5CC ---- 62617369 -> 42F00000
+------------- 0x805F7D4C ---- 40000000 -> 40300000
+------------- 0x80519F60 ----
+
+45343131 31373031
+206D7750 6C795374
+6172744D 656D3A20
+63616E27 7420706C
+61792066 696C6520
+74797065 204D5056
+2E205573
+
+ -> 
+
+3DC08057 3DE03F40
+91EEE098 3DE0BF40
+91EEE084 7E0802A6
+4E800421 7E0803A6
+3DE03F80 91EEE098
+3DE0BF80 91EEE084
+4E800020
+
+------------- 0x80036764 ---- 4E800421 -> 484E37FD
+------------- 0x8036328C ---- 4E800421 -> 481B6CD5
+------------- 0x80363180 ---- 4E800421 -> 481B6DE1
+------------- 0x800BCA54 ---- 4E800421 -> 4845D50D
+------------- 0x80345D98 ---- 4E800421 -> 481D41C9
+------------- 0x800BC8D8 ---- C3629918 -> Branch
+
+C3629918 81E10094
+3E00800B 6210C4B0
+7C0F8000 40820028
+3DE08057 61EF5F1C
+81EF0000 2C0F0002
+3DE0804A 61EFB5CC
+C36F0000 41820008
+FF60D850 00000000
+
+------------- 0x800622A8 ---- 4E800421 -> 484B7CB9
+------------- 0x80062300 ---- 4E800421 -> 484B7C61
+------------- 0x8049475C ---- D0030004 -> Branch
+
+3DC03F40 91C22000
+C2222000 EC110032
+D0030004 00000000
+
+------------- 0x80484334 ---- C0830068 -> Branch
+
+3DC04000 91C22000
+C0822000 00000000
+
+
+	-==-
+
+
+Expert Ring Loss v2
+In Expert Mode, getting hit will make you lose all your rings, and they cannot be recollected.
+v2 is player independent
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x800CB8D8 ---- 28000000 -> Branch
+
+28000000 41820018
+39E00000 3E003F4C
+6210CCCD 3EC04120
+48000010 3DE040A0
+3E004120 3EC03FC0
+91E2A5E4 9202A60C
+92C2A5F0 00000000
+
+------------- 0x800B7E24 ---- 7C9E00D0 -> Branch
+
+3DE08057 61EFD7C5
+89EF0000 2C0F0001
+40820008 3BC003E7
+7C9E00D0 00000000
+
+
+	-==-
+
+
+Holdable Slide v2
+The player can slide as long as B or X are held, with no minimum or maximum slide time. Exception: sliding off a ledge.
+v2 adds player independent controls
+[dreamsyntax, LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008DC2C ---- FC010040 -> Branch
+
+3DE0807D 61EF71A0
+81EF0000 81EF0000
+81EF022C 81EF0030
+7C0FF800 41820008
+40820010 3DE08057
+61EF5D5F 48000010
+3DE08057 61EF5D87
+48000004 89EF0000
+2C0F0002 41820014
+2C0F0008 4182000C
+C00291C8 4800000C
+3DE08000 C00F000C
+60000000 00000000
+
+
+	-==-
+
+
+Devil Doom is a Ranked Mission
+Restores the Rank screen for Devil Doom
+It has values for ranks in the original game but never displays
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80205670 ---- 41820018 -> 48000018
+
+
+	-==-
+
+
+S Rank System
+Ranks A and B both count for the "Total A Ranks" counter.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80204FFC ---- 2C000000 -> 2c000001
+------------- 0x80205000 ---- 4082000C -> 4181000c
+------------- 0x80205040 ---- 2C000000 -> 2c000001
+------------- 0x80205044 ---- 4082000C -> 4181000c
