@@ -1404,3 +1404,16 @@ It has values for ranks in the original game but never displays
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x80205670 ---- 41820018 -> 48000018
+
+
+	-==-
+
+
+S Rank System
+Ranks A and B both count for the "Total A Ranks" counter.
+[LimblessVector]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80204FFC ---- 2C000000 -> 2c000001
+------------- 0x80205000 ---- 4082000C -> 4181000c
+------------- 0x80205040 ---- 2C000000 -> 2c000001
+------------- 0x80205044 ---- 4082000C -> 4181000c
