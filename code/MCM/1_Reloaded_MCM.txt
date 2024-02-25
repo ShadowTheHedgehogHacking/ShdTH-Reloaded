@@ -1078,20 +1078,12 @@ NTSC 1.06 ---- 0x2C1760 -----
 	-==-
 
 
-LightDash Exit State Change to Launched & Remove Radial Blur for Westopolis
+LightDash Exit State Change to Launched for Westopolis
 For Westopolis Only
 Allows for SkyDive to persist after light dashing
-Removes RadialBlur Effect from Launched::End as well
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 --- 0x801FA2DC ---- 9421FFC0 -> Branch
-
-3DE08057 61EFD748
-81EF0000 2C0F0064
-40820008 4E800020
-9421FFC0 00000000
-
-------------- 0x80089F34 ---- 38000002 -> Branch
+NTSC 1.06 --- 0x80089F34 ---- 38000002 -> Branch
 
 3DE08057 61EFD748
 81EF0000 2C0F0064

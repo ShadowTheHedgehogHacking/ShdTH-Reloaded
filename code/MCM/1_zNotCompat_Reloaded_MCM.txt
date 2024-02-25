@@ -1,0 +1,11 @@
+
+Remove Radial Blur for Westopolis (Only for Reloaded Do NOT use with 2PReloaded or 2PMod)
+Removes radial blur in Westopolis - NOT compatible with 2PReloaded / 2PMod
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x801FA2DC ---- 9421FFC0 -> Branch
+
+3DE08057 61EFD748
+81EF0000 2C0F0064
+40820008 4E800020
+9421FFC0 00000000
