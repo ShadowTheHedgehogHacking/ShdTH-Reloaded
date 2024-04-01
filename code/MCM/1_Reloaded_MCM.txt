@@ -315,9 +315,9 @@ NTSC 1.06 --- 0x800A0324 ---- 5460063F -> Branch
 	-==-
 
 
-Disable Slide on B-press on ground for melee and state extension
+Disable Slide on B-press on ground for melee and state extension V2
 Disables sliding with B button if melee weapon held
-Enables slide while holding a melee weapon in these states:
+Enables slide in these states:
 - Spindash
 - HomingAttack
 - JumpDash
@@ -328,10 +328,7 @@ NTSC 1.06 --- 0x800A0238 ---- 5460063F -> Branch
 3E00807D 621071A0
 82100000 82100000
 82D00238 56CF273E
-2C0F0008 40820054
-82D60034 2C160000
-41820048 82D60018
-2C160005 4082003C
+2C0F0008 4082003C
 82D0022C 82D60030
 82D60010 39E00001
 2C160006 4182001C
@@ -891,12 +888,13 @@ Bloom intensity multiplier. Lessens the bloom effect to a more reasonable level.
 If you'd like a custom amount, then replace the second half of this code with a floating point number, in hexadecimal.
 Examples:
 0.25 : 3e800000
-0.375: 3ec00000
+0.375: 3ec00000 (reloaded 1.1 and earlier)
 0.5  : 3f000000
+0.67 : 3f2b851f (sx / reloaded 1.2 and later)
 0.95 : (default)
 [TheHatedGravity]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 ---- 0x567C30 ----- 3F733333 -> 3ec00000
+NTSC 1.06 --- 0x8056AC30 ---- 3F733333 -> 3f2b851f
 
 
 	-==-
