@@ -92,41 +92,15 @@ NTSC 1.06 --- 0x8016DFDC ---- 7FA3EB78 -> 41820008
 	-==-
 
 
-Death Counter System
-Replaces the life counter with a death counter; instead of counting your remaining lives, the game counts your accumulated deaths.
-Gaining a 1-up will reduce the counter by 1.
-While in Expert Mode (not via Select), the lives system functions as original.
+Life System Modifier
+Life counter stops decreasing at 1
+Restart does not affect lives
+Egg Dealer easter egg with '1' life
 [LimblessVector, dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 --- 0x8016F068 ---- 38000005 -> 38000000
-------------- 0x8016F05C ---- 80030094 -> 38000000
-------------- 0x80351CA8 ---- 2C000000 -> 2c00ff80
-------------- 0x801E2FC4 ---- 2C030000 -> 2c03ff80
+NTSC 1.06 --- 0x80178BCC ---- 2C030000 -> 2c030001
 ------------- 0x80178D20 ---- 3880FFFF -> 38800000
-------------- 0x80178D44 ---- 38800005 -> 38800000
-------------- 0x80178BCC ---- 2C030000 -> 2c03ff80
-------------- 0x802FB6F8 ---- 2C030000 -> 2C030003
-------------- 0x802FB6FC ---- 40820024 -> 41800024
-------------- 0x80178BD8 ---- 3880FFFF -> Branch
-
-3880FFFF 3DE0805E
-61EFC170 81EF0000
-2C0F0006 41820008
-38800001 00000000
-
-------------- 0x8009B5FC ---- 38800001 -> Branch
-
-38800001 3DE0805E
-61EFC170 81EF0000
-2C0F0006 41820008
-3880FFFF 00000000
-
-------------- 0x802044A0 ---- 2C000000 -> Branch
-
-3DE0805E 61EFC170
-81EF0000 2C0F0006
-41820008 3800FF80
-2C000000 00000000
+------------- 0x802FB6F8 ---- 2C030000 -> 2c030001
 
 
 	-==-
@@ -153,10 +127,9 @@ NTSC 1.06 --- 0x801D3B50 ---- 808D4518 -> Branch
 	-==-
 
 
-Expert Select
+Expert Select v2
 Press X instead of A when locking in a stage on the Select menu to play the Expert version.
-TODO: Update with Zetti's fix in SX preventing expert progression bypass
-[LimblessVector]
+[LimblessVector, BlazinZzetti]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x80206334 ---- 987F0059 -> Branch
 
@@ -165,20 +138,6 @@ NTSC 1.06 --- 0x80206334 ---- 987F0059 -> Branch
 2C0F0008 40820008
 38600001 987F0059
 38600000 00000000
-
-------------- 0x801E33BC ---- 901F00A0 -> Branch
-
-3DE0805E 61EFC173
-89EF0000 2C0F0006
-40820008 901F00A0
-60000000 00000000
-
-------------- 0x8016F018 ---- 901F0000 -> Branch
-
-3DE0805E 61EFC173
-89EF0000 2C0F0006
-41820008 38000000
-901F0000 00000000
 
 
 	-==-
