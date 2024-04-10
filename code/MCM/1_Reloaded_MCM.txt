@@ -1318,3 +1318,31 @@ NTSC 1.06 --- 0x80204FFC ---- 2C000000 -> 2c000001
 ------------- 0x80205000 ---- 4082000C -> 4181000c
 ------------- 0x80205040 ---- 2C000000 -> 2c000001
 ------------- 0x80205044 ---- 4082000C -> 4181000c
+
+
+	-==-
+
+
+Separate Save File - GUPR8P
+Modifies the game ID in code to allow loading from a seperate save file than the original shadow the hedgehog.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x57D780 ----- 47555045 -> 47555052
+
+
+	-==-
+
+
+Save Data Description Update
+Update SHADOW THE HEDGEHOG to SHADOW RELOADED
+and SHADOWTHEHEDGEHOG to SHADOWRELOADED
+[BlazinZzetti]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 ---- 0x4F8964 ----- 4F572054 -> 4f572052
+-------------- 0x4F8968 ----- 48452048 -> 454C4F41
+-------------- 0x4F896C ----- 45444745 -> 44454400
+-------------- 0x4F8970 ----- 484F4700 -> 20202000
+-------------- 0x4F899C ----- 4F575448 -> 4F575245
+-------------- 0x4F89A0 ----- 45484544 -> 4C4F4144
+-------------- 0x4F89A4 ----- 4745484F -> 45440020
+-------------- 0x4F89A8 ----- 47000000 -> 20000000
