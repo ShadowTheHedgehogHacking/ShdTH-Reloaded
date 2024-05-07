@@ -1346,3 +1346,34 @@ NTSC 1.06 ---- 0x4F8964 ----- 4F572054 -> 4f572052
 -------------- 0x4F89A0 ----- 45484544 -> 4C4F4144
 -------------- 0x4F89A4 ----- 4745484F -> 45440020
 -------------- 0x4F89A8 ----- 47000000 -> 20000000
+
+
+	-==-
+
+
+Fix Sliding on Steep Slopes
+Fixes Player::Behavior::Sliding from being blocked by certain slopes (raycast miss)
+Also allows holding slide to work while falling/in the air
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8008DD80 ---- 40810078 -> 48000078
+
+
+	-==-
+
+
+Disable CarType Vehicle Drifting
+Disables the Drift ability CarType vehicles have (max speed + release stick and A, then press A) as it constantly lead to player deaths / control loss.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x801BD710 ---- 418200D4 -> 480000D4
+
+
+	-==-
+
+
+EggPierrot Stage Fix
+Fixes the typo that sets Armored EggPierrot model on Air Fleet instead of Egg Breaker 0511
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80289844 ---- 2C0001F5 -> 2C0001FF
