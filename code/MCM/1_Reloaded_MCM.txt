@@ -1377,3 +1377,43 @@ Fixes the typo that sets Armored EggPierrot model on Air Fleet instead of Egg Br
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x80289844 ---- 2C0001F5 -> 2C0001FF
+
+
+	-==-
+
+
+SuperShadow Always Has Fully Charged Spears while ChaosPowers Active
+Makes ChaosSpear fully charged without charging if either hero/dark shadow is active. Also mutes "Chaos" and "Spear" lines when in this state.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802F0D20 ---- C03C007C -> Branch
+
+3DE08057 61EF66D0
+820F0000 2C100001
+4182001C 39EF000C
+820F0000 2C100001
+4182000C C03C007C
+40820008 C022FCC8
+60000000 00000000
+
+------------- 0x802F0D94 ---- FFE00090 -> Branch
+
+3DE08057 61EF66D0
+820F0000 2C100001
+4182001C 39EF000C
+820F0000 2C100001
+4182000C FFE00090
+40820008
+b 0x802F0DC0
+60000000 00000000
+
+------------- 0x802F0FFC ---- 38000001 -> Branch
+
+3DE08057 61EF66D0
+820F0000 2C100001
+4182001C 39EF000C
+820F0000 2C100001
+4182000C 38000001
+40820008
+b 0x802F1018
+60000000 00000000
