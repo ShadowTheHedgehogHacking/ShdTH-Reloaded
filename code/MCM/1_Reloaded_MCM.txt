@@ -1417,3 +1417,15 @@ b 0x802F0DC0
 40820008
 b 0x802F1018
 60000000 00000000
+
+
+
+	-==-
+
+
+LaserRifle Damage Adjustment
+Increases LaserRifle damage
+3 -> 6
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80545F74 ---- 40400000 -> 40C00000
