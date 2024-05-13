@@ -859,16 +859,17 @@ NTSC 1.06 --- 0x8056AC30 ---- 3F733333 -> 3f2b851f
 	-==-
 
 
-Melee Weapon Core Revamp v2
+Melee Weapon Core Revamp v3
 !!REQUIRES SHADOW.MTP MODIFICATION!!
 
 Changing melee to be an extension of Player::Ground rather than its own state
 
 - Hold B to activate the weapon mask
 - While holding B, press and hold L to have shadow attack rapidly
-- Switch to original melee by pressing (Z) at any time - your choice persists until next game init
+- Switch melee modes by pressing (Z) at any time - your choice persists until next game init - per player mode switching
 - uses 'Player::Ground' physics
 - Allows for melee held + attack held to create EffectMask + DamageColi extra range while jumping
+- v3 adds two player compatibility
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x80067B5C ---- 807F0040 -> 38600000
@@ -926,7 +927,7 @@ EC00082A D00F0000
 61EFA108 3A000001
 920F0000 00000000
 
-------------- 0x8051A114 ---- 53465356 -> 00000000
+------------- 0x8051A114 ---- 53465356 -> 01010000
 ------------- 0x800A8600 ---- 38000016 -> Branch
 
 8A04000B 2C100020
@@ -1417,7 +1418,6 @@ b 0x802F0DC0
 40820008
 b 0x802F1018
 60000000 00000000
-
 
 
 	-==-
