@@ -274,28 +274,29 @@ NTSC 1.06 --- 0x800A0324 ---- 5460063F -> Branch
 	-==-
 
 
-Disable Slide on B-press on ground for melee and state extension V2
-Disables sliding with B button if melee weapon held
+Disable Slide on B-press on ground and state extension V3
+Disables sliding with B button
 Enables slide in these states:
 - Spindash
 - HomingAttack
 - JumpDash
-[dreamsyntax]
+
+V3 adds player independence and removes restriction of melee required
+[dreamsyntax,]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x800A0238 ---- 5460063F -> Branch
 
-3E00807D 621071A0
-82100000 82100000
-82D00238 56CF273E
-2C0F0008 4082003C
-82D0022C 82D60030
-82D60010 39E00001
-2C160006 4182001C
-2C160008 41820014
-2C160012 4182000C
-2C0F0001 41820010
-2C0F00EE 40820008
-5460063F 00000000
+821F0004 82D00238
+56CF273E 2C0F0008
+4082003C 82D0022C
+82D60030 82D60010
+39E00001 2C160006
+4182001C 2C160008
+41820014 2C160012
+4182000C 2C0F0001
+41820010 2C0F00EE
+40820008 5460063F
+60000000 00000000
 
 
 	-==-
