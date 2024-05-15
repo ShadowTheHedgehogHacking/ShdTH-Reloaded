@@ -242,7 +242,8 @@ NTSC 1.06 ---- 0x168D74 ----- 7C00D000 -> 60000000
 	-==-
 
 
-Hold L to JumpDash instead of HomingAttack v4
+Hold L to JumpDash instead of HomingAttack v5
+v5 optimizes
 v4 fixes partner controlled NPC bug
 v3 adds player independent controls
 v2 restores console compatibility
@@ -250,17 +251,13 @@ v2 restores console compatibility
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x800A0324 ---- 5460063F -> Branch
 
-5460063F 41820090
+5460063F 41820070
 3DE0807D 61EF71A0
 820F0000 82100000
-82100224 3ADF0004
-82D60000 82D60224
-7C10B000 41820034
-39EF0008 820F0000
-2C100000 41820054
-82100000 82100224
-3ADF0004 82D60000
-82D60224 7C10B000
+82DF0004 7C10B000
+41820020 820F0008
+2C100000 41820044
+82100000 7C10B000
 41820014 40820038
 3E008056 6210ED4E
 41820010 3E008056
