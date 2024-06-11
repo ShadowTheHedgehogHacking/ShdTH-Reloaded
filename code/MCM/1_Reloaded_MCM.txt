@@ -1466,3 +1466,27 @@ Increases LaserRifle damage
 [dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x80545F74 ---- 40400000 -> 40C00000
+
+
+	-==-
+
+
+Slide State Extension - Bad Transition Bugfix
+In rare instances, when performing the extended slide state near the ground it is possible to skip over the proper onGround call when performing Slide -> OnFall -> Ground; resulting in the player being unable to jump until Player::Idle is called. This code checks for the bad state in Player::Ground and resets it to an expected safe value without needing to enter Player::Idle
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x80083A70 ---- 386300A0 -> Branch
+
+386300A0 81E30000
+2C0F00F8 41800018
+4182000C 2C0F00F9
+4082000C 39E000FA
+91E30000 00000000
+
+------------- 0x80083B94 ---- 386300A0 -> Branch
+
+386300A0 81E30000
+2C0F00F8 41800018
+4182000C 2C0F00F9
+4082000C 39E000FA
+91E30000 00000000
