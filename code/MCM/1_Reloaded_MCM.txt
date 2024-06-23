@@ -1490,3 +1490,17 @@ NTSC 1.06 --- 0x80083A70 ---- 386300A0 -> Branch
 4182000C 2C0F00F9
 4082000C 39E000FA
 91E30000 00000000
+
+
+
+	-==-
+
+
+Disable Diablon Warp Player Function
+This function warps the player on Diablon Init and Phase 2 Init.
+As a result nukkoro2.inf setting is ignored, and it only targets one player.
+Disabling this to have more control over where the player spawns, and to
+allow the hrd variant gimmick to function properly.
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x802D3934 ---- 9421FF90 -> 4E800020
