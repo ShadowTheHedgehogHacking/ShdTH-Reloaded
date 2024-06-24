@@ -1,0 +1,3 @@
+New entry added @ 8000000; custom subtitle explaining spindash jumping off slopes.
+
+Non-English languages copy data from message ID 903100; "I can get up here by using my Spin Dash."
