@@ -844,14 +844,14 @@ Bloom Reduction (Reloaded Default)
 Bloom intensity multiplier. Lessens the bloom effect to a more reasonable level.
 If you'd like a custom amount, then replace the second half of this code with a floating point number, in hexadecimal.
 Examples:
-0.25 : 3e800000
-0.375: 3ec00000 (reloaded 1.1 and earlier)
-0.5  : 3f000000
-0.67 : 3f2b851f (sx / reloaded 1.2 and later)
-0.95 : (default)
+0.25 : 3E800000
+0.375: 3EC00000 (reloaded)
+0.5  : 3F000000
+0.67 : 3F2B851F (sx)
+0.95 : 3F733333 (default)
 [TheHatedGravity]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 --- 0x8056AC30 ---- 3F733333 -> 3f2b851f
+NTSC 1.06 --- 0x8056AC30 ---- 3F733333 -> 3EC00000
 
 
 	-==-
