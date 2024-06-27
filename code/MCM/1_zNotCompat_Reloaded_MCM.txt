@@ -9,3 +9,21 @@ NTSC 1.06 --- 0x801FA2DC ---- 9421FFC0 -> Branch
 81EF0000 2C0F0064
 40820008 4E800020
 9421FFC0 00000000
+
+
+
+	-==-
+
+
+Play as BATTLE Characters in 1P Mode v2
+Select P1's character in 2P GAME (BATTLE), back out to main menu at P2's turn to select.
+P1 will retain the character for use in 1P modes.
+No controller needed in slot 2 to choose character for P1.
+
+Bug:
+Using Android characters may possibly crash in Last Story's Devil Doom
+[dreamsyntax]
+Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
+NTSC 1.06 --- 0x8017707C ---- 808400A8 -> 38800320
+------------- 0x801770F4 ---- 4BF361A5 -> 60000000
+------------- 0x8040DB30 ---- 80060000 -> 38000000
