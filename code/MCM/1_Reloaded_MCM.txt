@@ -106,22 +106,32 @@ NTSC 1.06 --- 0x80178BCC ---- 2C030000 -> 2c030001
 	-==-
 
 
-Unique themes for Black Comet ending and Lava Shelter boss
+Music Update Ending Tracks and Lava Shelter Boss
+Plays "Almost Dead" for GUN Fortress Dark ending
+Plays "Who I Am" for GUN Fortress Hero and Final Haunt Dark endings
 Plays a unique song for Black Comet endings, rather than reusing GUN Fortress'. Currently plays the unused song "Broken".
 For the Lava Shelter versions of the Egg Dealer boss only, the EGGMAN remix will play instead of the Egg Dealer boss theme.
-[LimblessVector]
+[LimblessVector, dreamsyntax]
 Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
 NTSC 1.06 --- 0x801D3B50 ---- 808D4518 -> Branch
 
-808D4518 81ED4518
-2C0F0263 4181000C
-3A000032 48000008
-3A000036 3EC08051
-9A160EA0 3A000033
-2C0F0266 41820008
-3A000032 3EC0804D
-9A16044A 3EC0804E
-9A163626 00000000
+808D4518 2C040263
+41800034 41820020
+2C040266 41800030
+41820034 2C040269
+41800034 41820010
+40820014 39E00032
+48000028 39E00035
+48000020 39E00037
+48000018 39E00036
+48000010 39E00033
+48000008 39E00034
+3E008051 99F00EA0
+39E00033 2C040266
+41820008 39E00032
+3E00804D 99F0044A
+3E00804E 99F03626
+60000000 00000000
 
 
 	-==-
@@ -1490,7 +1500,6 @@ NTSC 1.06 --- 0x80083A70 ---- 386300A0 -> Branch
 4182000C 2C0F00F9
 4082000C 39E000FA
 91E30000 00000000
-
 
 
 	-==-
