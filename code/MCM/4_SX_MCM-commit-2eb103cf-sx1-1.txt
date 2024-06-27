@@ -227,28 +227,6 @@ B2120000 00000000
 	-==-
 
 
-Modern UI Control
-Uses ModernUIControl.asm
-
-When enabled with the optional flag, it switches the X and Y button commands when in menus.  This is expected to be used with Xbox and PS controllers to better simulate menus would work in those ports of the game.
-[BlazinZzetti]
-Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 --- 0x803562A0 ---- 7C9D002E -> Branch
-
-7C9D002E 3E408057
-3A527B2E 8A720000
-28130001 40820028
-28040002 41820010
-28040008 41820010
-48000014 38800008
-4800000C 38800002
-48000004 3A400000
-3A600000 00000000
-
-
-	-==-
-
-
 Set Flag to Show Time Message
 Uses SetCreditsShown.asm
 
@@ -430,20 +408,6 @@ NTSC 1.06 --- 0x801E33BC ---- 901F00A0 -> Branch
 82100000 82100004
 2C100000 41820008
 901E0070 00000000
-
-
-	-==-
-
-
-Allow Skip to Title Sooner
-Uses SkipIntroSooner.asm
-
-Overrides memory check into to make the game think it has already shown the intro credits, allowing the player to skip to the title screen.
-[BlazinZzetti]
-Revision ---- DOL Offset ---- Hex to Replace ---------- ASM Code -
-NTSC 1.06 --- 0x803442F8 ---- 8803007F -> Branch
-
-38000000 00000000
 
 
 	-==-
