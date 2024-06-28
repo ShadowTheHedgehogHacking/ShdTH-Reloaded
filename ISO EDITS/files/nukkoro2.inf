@@ -1,5 +1,5 @@
 #ステージパラメータ
-#Reloaded 1.2 Experimental Ranks
+#Reloaded 1.2 Ranks
 
 [Practice]
 PLAYER : 0 0 0 0 0 0 0
@@ -523,7 +523,6 @@ MISSIONCOUNT_N : 600 0
 
 [EVENT0901]
 #Eggman's Computer
-#PLAYER : 0 0 100 0 0 0 0
 
 [EVENT0902]
 #White House Sunset
