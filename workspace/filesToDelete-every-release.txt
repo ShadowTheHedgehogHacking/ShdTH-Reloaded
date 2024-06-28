@@ -7,7 +7,6 @@ files/csdFiles/MediaMenu.gncp
 files/stg0401/stg0401_21.one
 files/stg0402/stg0402_tex02.one
 files/stg0614/stg0614_80.one
-files/stg6000/stg6000_dat.one
 
 files/csdFiles/JP
 files/palsel
