@@ -201,3 +201,36 @@ Preparati, Black Doom!
 ブラックドゥーム！！
 - SP
 ¡Prepárate, Black Doom!
+
+
+===========================
+06/29/2024
+
+Port "Anyone who tries to get in my way will be crushed" (can02_s06_sd.adx) from Advertise to 0700.
+Was down in EN for v1.1 (and v1.0?) but missed other langs.
+
+Take Advertise index 732 as source data.
+Replace 0700 index 116,  "Please reconnect the controller to controller port 3 and press START to continue."
+
+Message ID / Branch / Sequence: 6002100
+Text Type: TRIGGER OBJECT
+audioId: 3428 (can02_s06_sd)
+subtitle:
+Anyone who tries to get in my way
+will be crushed.
+- FR
+Tous ceux qui osent s'opposer
+à moi seront éliminés !
+- GE
+Alle, die sich mir in den Weg stellen,
+werden vernichtet.
+- IT
+Chiunque osi mettersi in mezzo
+verrà fatto a pezzi.
+- JP
+僕の邪魔をするものは、
+たとえ誰であろうとも、徹底的に叩き潰す！
+- SP
+¡Aplastaré a todo el que ose
+interponerse en mi camino!
+===========================
