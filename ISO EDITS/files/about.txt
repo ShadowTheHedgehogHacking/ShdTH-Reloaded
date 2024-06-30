@@ -1,0 +1,18 @@
+Shadow the Hedgehog: Reloaded
+by LimblessVector and dreamsyntax
+
+It is recommended to play this ROM Hack
+..on Dolphin:
+....with 150% Emulated CPU Clock Override Minimum
+....with Emulate Disc Speed disabled
+..on Nintendont:
+....with Unlock Read Speed ON
+
+There are 4:3 and 16:9 versions available.
+Do not use Nintendont/Dolphin built in "Widescreen Hacks", this ROM already properly handles aspect ratio adjustments.
+
+Version v1.2
+Release 2024-07-01
+
+Source code in repo ShdTH-Reloaded on GitHub
+https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded
