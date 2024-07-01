@@ -32,15 +32,18 @@ Levels
 
 Player Actions
 - Shadow is generally faster and more responsive.
-- You can hold L to always perform a Jump Dash instead of a Homing Attack. This is useful if you don't want to target enemies while platforming.
-- You can toggle between Original and Reloaded melee weapon styles with the Z button. In Reloaded style, hold B to activate the weapon's hitbox, and hold L to perform rapid swings while running.
-- You can now go faster or slower than normal while riding the cyberspace circuits by pressing the A and B buttons.
+- Hold L to always perform a Jump Dash instead of a Homing Attack. This is useful if you don't want to target enemies while platforming.
+- You can toggle between Original and Reloaded melee weapon styles with the Z button. In Reloaded style, hold B to activate the weapon's hitbox, and hold B+L to perform rapid swings while running. You can also lock-in the weapon's hitbox by sliding while holding B.
+- Go faster or slow down while riding the cyberspace circuits by pressing the A and B buttons.
+- Shadow can now slide out of a spindash, homing attack, and jump dash.
+- Sliding duration is player controlled. Hold X to slide as long as you want.
+- You can tap A to make cars and motorcycles accelerate much faster and maintain a higher top speed.
 
 Unused Content
 - An inaccessible area in Lost Impact is now reachable.
 - Some unused dialogue was restored/added where appropriate.
 - “E.G.G.M.A.N. (Doc Robeatnix Mix)” was added to Lava Shelter's Egg Dealer fight. This was normally only played briefly during a cutscene.
-- "Who I Am", a planned track, was added to GUN Fortress, Hero and Final Haunt, Dark endings.
+- "Who I Am", a planned track, was added to GUN Fortress Hero and Final Haunt Dark endings.
 - "Broken", a planned track, was added to Black Comet's endings. (Black Comet normally reused a GUN Fortress ending track.)
 
 Visuals
@@ -48,22 +51,28 @@ Visuals
 - The bloom effect was reduced.
 - The palette of some similar-looking stages were changed to differentiate them.
 - Maria's eyes were adjusted.
+- Stray HP Bar pixel was removed.
+- Wrong Artificial Chaos eye glow rotation was fixed.
+- Unrigged GUN Bigfoot Type B cockpit glare was fixed.
+- All unlit ring inhibitors in cutscenes featuring Shadow were fixed.
+- The PS2 exclusive hand rig/animations for the Commander were fixed.
+- Chaos Emeralds have a darkened texture in all cutscenes.
 
 ## How to play / Setup
-Please verify you are using a 1:1 ShadowTheHedgehog USA ISO:
+Please verify you are using a 1:1 ShadowTheHedgehog GameCube ISO:
 
+TODO: Make a table
 
-CRC32: `f582cf1e`
+USA: <hash> || CRC32 `f582cf1e` || SHA-1 `5dc81ad9c97549394e30bedc252bfa37d4db1de0`
+JPN: <hash>
+PAL: <hash>
 
-
-or
-
-
-SHA-1: `5dc81ad9c97549394e30bedc252bfa37d4db1de0`
-
+---
 
 A How-To-Setup video is available here, and though it says v1.0, the setup is the same for v1.2:
 https://youtu.be/uv9gpqEbXU4
+
+TODO: Update below using xdelta wasm
 
 To play this mod, you must:
 1. Download the latest Release (v1.2) - picking if you want 4:3 or 16:9 version
@@ -86,6 +95,9 @@ To play this mod, you must:
 7. It is recommended to also download the `Dolphin Addons` and `Optional Cheats and Preferences` to further customize Reloaded to your liking.
 
 ## How to Build Reloaded Yourself
+
+### TODO: Move this to its own page, with a link here instead.
+
 IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
 1. Build a custom ISO overwriting any files from the `ISO EDITS` folder (below is steps how to do this)
 2. Enable Cheats and use provided game config .ini from the `code` folder - placing the `GUPE8P.ini` file in `Dolphin\User\GameSettings`
@@ -117,19 +129,20 @@ IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The bel
 12. Click View -> Purge Game List Cache if the Reloaded Icon is not appearing on the new entry. If it still does not appear, the files were not properly replaced
 
 # Credits
+
 ### Direct Contributions
 
 - LimblessVector
 : Project Lead
 
 - dreamsyntax
-: Reloaded Co-Hacker, Major Help and Feedback
+: Reloaded Co-Developer, work on Heroes Power Plant, other misc tools
 
 - TheHatedGravity
 : Model, Movie, and Font Help
 
 - BlazinZzetti
-: Code Contributor and Help
+: Code Contributor, Developer of Shadow SX, and Help
 
 ### Thanks
 
@@ -156,6 +169,12 @@ IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The bel
 
 - SonikkuA
 : Model Help
+
+- The Spectral Star, Jesus_PK, $$$Link, Angry Waiter, and many more! 
+: Testing, Feedback
+
+- Sanglish, Jesus_PK, dreamsyntax's mom, 
+: Custom Hint Translation assistance
 
 - aldelaro5
 : for Dolphin Memory Engine
