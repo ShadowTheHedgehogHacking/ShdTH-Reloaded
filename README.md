@@ -2,13 +2,15 @@
 <img src="https://raw.githubusercontent.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/master/workspace/res/title_screen.png" align="center" />
 </div>
 
+
 Shadow the Hedgehog: Reloaded is an improvement mod of Shadow the Hedgehog designed to make the game less tedious, increase challenge, fix bugs and oversights, restore some unused content, and generally remix levels.
 
-Reloaded is for the USA GameCube version, and is playable on Dolphin emulator (recommended), Nintendont for Wii and Wii U, and Swiss for GameCube.
+Reloaded is for the GameCube version, and is playable on Dolphin Emulator (recommended), Nintendont for Wii and Wii U, and Swiss for GameCube.
 
-Reloaded v1.2 is the final revision.
+Reloaded v1.2 is the final revision, released on 2024-07-01.
 
 1.0 Release video:
+
 https://youtu.be/1yM2kJjyhZQ
 
 
@@ -37,6 +39,7 @@ Player Actions
 - Go faster or slow down while riding the cyberspace circuits by pressing the A and B buttons.
 - Shadow can now slide out of a spindash, homing attack, and jump dash.
 - Sliding duration is player controlled. Hold X to slide as long as you want.
+- Air Saucers are much more mobile. Pressing A twice results in a downward spike instead of a double jump.
 - You can tap A to make cars and motorcycles accelerate much faster and maintain a higher top speed.
 
 Unused Content
@@ -59,40 +62,49 @@ Visuals
 - Chaos Emeralds have a darkened texture in all cutscenes.
 
 ## How to play / Setup
-Please verify you are using a 1:1 ShadowTheHedgehog GameCube ISO:
 
-TODO: Make a table
+### ROM Validation
+Please verify the ROM you are attempting to patch is a 1:1 ShadowTheHedgehog GameCube ISO.
 
-USA: <hash> || CRC32 `f582cf1e` || SHA-1 `5dc81ad9c97549394e30bedc252bfa37d4db1de0`
-JPN: <hash>
-PAL: <hash>
+GCZ/WIA/RVZ or any other format than ISO is not supported. Please convert to ISO, then compare your game to the table below.
 
----
+You can get your hashes of your ISO by right clicking your game in Dolphin's game list -> `Properties` -> `Verify` tab.
+
+| ROM    | CRC32 Hash    | SHA-1 Hash                               |
+| -------| ------------- | ---------------------------------------- |
+| NTSC-U | f582cf1e      | 5dc81ad9c97549394e30bedc252bfa37d4db1de0 |
+| PAL    | db7d8cd9      | 05b34c82c0fe8aa504539e4dfbba89957c7fc788 |
+| NTSC-J | 529baa3a      | 1d4d1a069d87bdcc6985ffd16d1d19328bb3ae69 |
+
+
 
 A How-To-Setup video is available here, and though it says v1.0, the setup is the same for v1.2:
 https://youtu.be/uv9gpqEbXU4
 
-TODO: Update below using xdelta wasm
+1. Download [the latest release from here](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/releases) - choosing either the original aspect ratio version or the widescreen version. Patchers exist for NTSC-U, NTSC-J, and PAL.
 
-To play this mod, you must:
-1. Download the latest Release (v1.2) - picking if you want 4:3 or 16:9 version
 ### Computer
-2. Place your original ShadowTheHedgehog USA in ISO format in the Patcher folder
-3. Rename your ISO to `GUPE8P.iso` if its not already named this.
-4. Run `Apply Patch-Windows.bat` if on Windows, `Apply Patch-Mac.command` if on Mac, `Apply Patch-Linux.sh` if on Linux 
-5. ShdTH-Reloaded.iso should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
-6. It is recommended to also download the `Dolphin Addons` and `Optional Cheats and Preferences` to further customize Reloaded to your liking
-7. From Optional Cheats and Preferences, place the `GUPE8P.ini` file in `Dolphin\User\GameSettings` (or `Documents\Dolphin Emulator\GameSettings` if not in portable mode)
-8. Enable Cheats in Dolphin -> Config. Right click the game the list and choose `Properties` to pick what cheats you want
-9. If playing on original hardware use [CodeManager2](https://github.com/CLF78/CodeManager2) to build GCT files in order to use cheats on hardware. Select the `GUPE8P.ini` file using CodeManager2.
-10. From Dolphin Addons, follow the instructions included with the file to install them and enable the custom textures / graphic mod as you desire
+2. Extract your chosen version release zip.
+3. Get the latest release or dev Dolphin - [dolphin-5.0-21460 or newer recommended](https://dolphin-emu.org/download/)
+4. Visit https://shadowthehedgehoghacking.github.io/xdelta-wasm/ or any other xdelta3 patcher of your choice.
+5. Specify your original ISO as the `Source file`.
+6. Specify the `reloaded-[region]-[aspect].xdelta` file you extracted as the `Patch file`.
+7. Click `Apply Patch`: It will then 'download' the patched file as `ISO NAME-patched.iso` (nothing is actually uploaded/downloaded, it is all done on-device).
+8. If you run into errors, likely the ISO is wrong hash for the xdelta you downloaded. Double check your original game in `Dolphin Verify` tab.
+9. It is recommended to also download the `Dolphin Addons` and `Optional Cheats and Preferences` to get the best experience, performance, and further customize Reloaded to your liking.
+10. From `Optional Cheats and Preferences`, place the `GUPR8P.ini` file in `\GameSettings` of your `Dolphin User Folder`. You can find your `Dolphin User Folder` by launching Dolphin and clicking `File` on the menu bar, then `Open User Folder`.
+11. Enable Cheats in `Dolphin -> Config`. Right click the game the list and choose `Properties` to pick what cheats you want.
+12. Under `Dolphin -> Config -> Advanced` enable `CPU Clock Override` and try various values (CPU dependent). I highly recommend at least `150%` if your CPU can handle it. Otherwise a suggested maximum value of `200%` should run the game at full 60fps at all times.
+13. From Dolphin Addons, follow the instructions included with the file to install them and enable the custom textures / graphic mod if you desire.
+14. If playing on Nintendont or Swiss, I recommend using [CodeManager2](https://github.com/CLF78/CodeManager2) to build GCT files in order to use cheats on hardware. Select the `GUPR8P.ini` file using CodeManager2.
+
 ### Android
 2. Download and install the [ROM Patcher](https://github.com/btimofeev/UniPatcher/releases/latest)
-3. Place your original ShadowTheHedgehog USA in ISO format into a folder
-4. Place the `GUPE8P.iso.vcdiff` from vcdiff folder into a folder
-5. Specify the output file & click the pink floating icon.
+3. Place your original ShadowTheHedgehog ROM in ISO format into an accessible folder
+4. Extract the Reloaded release zip you downloaded, and place the `reloaded-[region]-[aspect].xdelta` somewhere UniPatcher will be able to access it.
+5. Specify the output file & click the pink floating action button.
 6. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
-7. It is recommended to also download the `Dolphin Addons` and `Optional Cheats and Preferences` to further customize Reloaded to your liking.
+7. Turn off "Emulate Disc Speed" in your game configuration, or Dolphin configuration.
 
 ## How to Build Reloaded Yourself
 
@@ -103,7 +115,7 @@ IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The bel
 2. Enable Cheats and use provided game config .ini from the `code` folder - placing the `GUPE8P.ini` file in `Dolphin\User\GameSettings`
 
 ### Extraction of Original Game / FST Format
-1. Get the latest beta or dev Dolphin - [dolphin-5.0-20347 or newer recommended](https://dolphin-emu.org/download/)
+1. Get the latest beta or dev Dolphin - [dolphin-5.0-21460 or newer recommended](https://dolphin-emu.org/download/)
 2. (Optional: only do this step if you want to keep config separate) Before launching dolphin, create an empty file
    `portable.txt` in the same folder as Dolphin.exe
 3. Open Dolphin
