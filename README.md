@@ -13,24 +13,24 @@ Release video: https://youtu.be/1yM2kJjyhZQ
 
 ## Main Changes
 
-Unlocks and Story Pacing
+### Unlocks and Story Pacing
 - Cutscenes are always skippable.
 - Last Story now unlocks after 3 Story endings, instead of all 10.
 - Expert Mode unlocks after beating Last Story, instead of requiring all A Ranks. Expert Mode now has a unique ending animation. You can also practice Expert levels in Select Mode by locking in a stage with the X button.
 
-Missions
+### Missions
 - Many missions are more forgiving, allowing you to miss a few enemies or objects instead of needing to find ALL of them.
 - Partner characters won't stop you with their "camera zoom" introductions when you first meet them.
 - Partner characters won't automatically swap your active mission if you manually "lock in" your desired mission, either via D-Pad or by the Pause Menu. D-Pad Up will reset back to automatic swapping.
 
-Levels
+### Levels
 - S Rank has been added to the Rank system. Good luck!
 - The Secret Door system was reworked into additional pathways instead of one-time bonuses. You can now find extra routes and secrets, even on your first playthrough.
 - The Secret Keys have been replaced with Red Rings, and have been shuffled around for many levels.
 - Many "forced waiting" sections, such as elevators, are faster than before, or are skippable if you're skilled enough.
 - In-game timing can be used for speedruns, as we apply the timing mechanisms from [ShadowSX](https://www.shadowspeedrun.com/ShadowSX/)
 
-Player Actions
+### Player Actions
 - Shadow is generally faster and more responsive.
 - Hold L to always perform a Jump Dash instead of a Homing Attack. This is useful if you don't want to target enemies while platforming.
 - You can toggle between Original and Reloaded melee weapon styles with the Z button. In Reloaded style, hold B to activate the weapon's hitbox, and hold B+L to perform rapid swings while running. You can also lock-in the weapon's hitbox by sliding while holding B.
@@ -40,14 +40,14 @@ Player Actions
 - Air Saucers are much more mobile. Pressing A twice results in a downward spike instead of a double jump.
 - You can tap A to make cars and motorcycles accelerate much faster and maintain a higher top speed. You can dismount at any time. Press Y to brake.
 
-Unused Content
+### Unused Content
 - An inaccessible area in Lost Impact is now reachable.
 - Some unused dialogue was restored/added where appropriate.
 - “E.G.G.M.A.N. (Doc Robeatnix Mix)” was added to Lava Shelter's Egg Dealer fight. This was normally only played briefly during a cutscene.
 - "Who I Am", a planned track, was added to GUN Fortress Hero and Final Haunt Dark endings.
 - "Broken", a planned track, was added to Black Comet's endings. (Black Comet normally reused a GUN Fortress ending track.)
 
-Visuals
+### Visuals
 - Widescreen and 4:3 ratio options.
 - The bloom effect was reduced.
 - The palette of some similar-looking stages were changed to differentiate them.
@@ -58,6 +58,9 @@ Visuals
 - All unlit ring inhibitors in cutscenes featuring Shadow were fixed.
 - The PS2 exclusive hand rig/animations for the Commander were fixed.
 - Chaos Emeralds have a darkened texture in all cutscenes.
+
+## Changelog
+[A human changelog history can be found here.](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/blob/master/workspace/changelog.pdf)
 
 ## How to play / Setup
 
@@ -119,9 +122,6 @@ Below are the expected results after patching your ISO with Reloaded v1.2.
 | ---------------------------- | ------------- | ---------------------------------------- |
 | RELOADED                     | e159740e      | 7496bb93064e75b6346b4d4219e89fddaf35c1be |
 | RELOADED WIDESCREEN          | 608b69c4      | 246329735cd79fd0fe187c61b94487e75c42f1b7 |
-
-### Changelog
-[A human changelog history can be found here.](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/blob/master/workspace/changelog.pdf)
 
 # Credits
 
