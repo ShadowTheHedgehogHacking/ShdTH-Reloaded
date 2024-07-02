@@ -165,7 +165,7 @@ Below are the expected results after patching your ISO with Reloaded v1.2.
 - SonikkuA
 : Model Help
 
-- The Spectral Star, Jesus_PK, $$$Link, Angry Waiter, and many more! 
+- The Spectral Star, Jesus_PK, $$$Link, Angry Waiter, Bloodedge and many more! 
 : Testing, Feedback
 
 - Sanglish, Jesus_PK, TheFetiʂhMachiոe, dreamsyntax's mom
