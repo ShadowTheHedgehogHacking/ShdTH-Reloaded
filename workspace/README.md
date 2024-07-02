@@ -3,21 +3,22 @@
 IF YOU ARE NOT ACTIVELY DEVELOPING A MOD OFF RELOADED, IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW.
 THIS IS PURELY FOR THOSE LOOKING TO REPRODUCE THE ROM FROM SCRATCH.
 
-### Step Summary
+### Building from a clean slate
 1. You must use the NTSC-U ROM as a base.
 2. Extract the original game following "Extraction of Original Game / FST Format" below.
 3. Merge the `\ISO EDITS` content ('files' and 'sys') with the extracted game.
 4. Open the `\AFS` content from the repo. Follow the README and grab `PAFS` utility. Move the extracted game's `PRS_VOICE_E.afs` into this folder. Then drag it onto `PAFS.exe`. The patched AFS will be created. Rename the patched AFS to the original game name, and move it to the extracted game folder.
-5. Build the ISO with Dolphin's -> Right Click Game -> 'Convert'. This is necessary as we will need an ISO for MCM (Melee Code Manager).
-6. Download MCM (Melee Code Manager) if you haven't: https://github.com/DRGN-DRC/Melee-Code-Manager/releases
-7. You will need to overwrite configurations to make it work with Shadow. After extracting v4.4.1 or newer:
+5. Open the `\workspace\fileToDelete-every-release.txt` and delete these directories and files from your extracted game, as specified.
+6. Build the ISO with Dolphin's -> Right Click Game -> 'Convert'. This is necessary as we will need an ISO for MCM (Melee Code Manager).
+7. Download MCM (Melee Code Manager) if you haven't: https://github.com/DRGN-DRC/Melee-Code-Manager/releases
+8. You will need to overwrite configurations to make it work with Shadow. After extracting v4.4.1 or newer:
 In `\Original DOLs` place your ORIGINAL game's `main.dol` from `YourExtractedGame\sys` (not the overwritten one, re-extract it if needed) in this folder, renaming as `NTSC 1.06.dol`.
 In `\lib` place/overwrite the `settings.py` from the repo's `\code\MCM`
 In `\Mods Library` place the .txt files from the repo's `\code\MCM`
-8. Launch MCM. Select your built ISO from step 5. It should show the currently enabled codes across the four files.
+9. Launch MCM. Select your built ISO from step 6. It should show the currently enabled codes across the four files.
 Note: You can open the original game, which will then ask what version is the ROM. Specify 1.06 if ever asked. Note it will MODIFY the ISO that you pick with a MCM header declaring this version, so be sure to only use copies!
-9. Place the `\code\GUPR8P.ini` file in `\GameSettings` of your `Dolphin User Folder`. You can find your `Dolphin User Folder` by launching Dolphin and clicking `File` on the menu bar, then `Open User Folder`.
-10. Use HeroesPowerPlant / HeroesOne-Reloaded, and other tools at github.com/ShadowTheHedgehogHacking to develop / make adjustments.
+10. Place the `\code\GUPR8P.ini` file in `\GameSettings` of your `Dolphin User Folder`. You can find your `Dolphin User Folder` by launching Dolphin and clicking `File` on the menu bar, then `Open User Folder`.
+11. Use HeroesPowerPlant / HeroesOne-Reloaded, and other tools at github.com/ShadowTheHedgehogHacking to develop / make adjustments.
 
 ### Extraction of Original Game / FST Format
 1. Get the latest release or dev Dolphin - [dolphin-5.0-21460 or newer recommended](https://dolphin-emu.org/download/)

@@ -9,10 +9,7 @@ Reloaded is for the GameCube version, and is playable on Dolphin Emulator (recom
 
 Reloaded v1.2 is the final revision, released on 2024-07-01.
 
-1.0 Release video:
-
-https://youtu.be/1yM2kJjyhZQ
-
+Release video: https://youtu.be/1yM2kJjyhZQ
 
 ## Main Changes
 
@@ -31,6 +28,7 @@ Levels
 - The Secret Door system was reworked into additional pathways instead of one-time bonuses. You can now find extra routes and secrets, even on your first playthrough.
 - The Secret Keys have been replaced with Red Rings, and have been shuffled around for many levels.
 - Many "forced waiting" sections, such as elevators, are faster than before, or are skippable if you're skilled enough.
+- In-game timing can be used for speedruns, as we apply the timing mechanisms from [ShadowSX](https://www.shadowspeedrun.com/ShadowSX/)
 
 Player Actions
 - Shadow is generally faster and more responsive.
@@ -40,7 +38,7 @@ Player Actions
 - Shadow can now slide out of a spindash, homing attack, and jump dash.
 - Sliding duration is player controlled. Hold X to slide as long as you want.
 - Air Saucers are much more mobile. Pressing A twice results in a downward spike instead of a double jump.
-- You can tap A to make cars and motorcycles accelerate much faster and maintain a higher top speed.
+- You can tap A to make cars and motorcycles accelerate much faster and maintain a higher top speed. You can dismount at any time. Press Y to brake.
 
 Unused Content
 - An inaccessible area in Lost Impact is now reachable.
@@ -71,19 +69,24 @@ GCZ/WIA/RVZ or any other format than ISO is not supported. Please convert to ISO
 You can get your hashes of your ISO by right clicking your game in Dolphin's game list -> `Properties` -> `Verify` tab.
 
 | ROM    | CRC32 Hash    | SHA-1 Hash                               |
-| -------| ------------- | ---------------------------------------- |
+| ------ | ------------- | ---------------------------------------- |
 | NTSC-U | f582cf1e      | 5dc81ad9c97549394e30bedc252bfa37d4db1de0 |
 | PAL    | db7d8cd9      | 05b34c82c0fe8aa504539e4dfbba89957c7fc788 |
 | NTSC-J | 529baa3a      | 1d4d1a069d87bdcc6985ffd16d1d19328bb3ae69 |
 
 
 
-A How-To-Setup video is available here, and though it says v1.0, the setup is the same for v1.2:
-https://youtu.be/uv9gpqEbXU4
+A How-To-Setup video is available. Check the releases page.
 
-1. Download [the latest release from here](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/releases) - choosing either the original aspect ratio version or the widescreen version. Patchers exist for NTSC-U, NTSC-J, and PAL.
+### Nintendont Users: Custom Build Required
+At time of release of v1.2 (2024/07/01) Nintendont does not officially support oversized ISOs.
+
+You will need to use [this build of Nintendont instead](https://github.com/nfsman34/Nintendont-SonicRiders/releases) until [this PR is merged](https://github.com/FIX94/Nintendont/pull/1213). When the PR is merged, you can update your official Nintendont and switch to it.
+If playing with Nintendont, enable Unlocked Read Speed before launching the game.
+
 
 ### Computer
+1. Download [the latest release from here](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/releases) - choosing either the original aspect ratio version or the widescreen version. Patchers exist for NTSC-U, NTSC-J, and PAL.
 2. Extract your chosen version release zip.
 3. Get the latest release or dev Dolphin - [dolphin-5.0-21460 or newer recommended](https://dolphin-emu.org/download/)
 4. Visit https://shadowthehedgehoghacking.github.io/xdelta-wasm/ or any other xdelta3 patcher of your choice.
@@ -99,6 +102,7 @@ https://youtu.be/uv9gpqEbXU4
 14. If playing on Nintendont or Swiss, I recommend using [CodeManager2](https://github.com/CLF78/CodeManager2) to build GCT files in order to use cheats on hardware. Select the `GUPR8P.ini` file using CodeManager2.
 
 ### Android
+1. Download [the latest release from here](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/releases) - choosing either the original aspect ratio version or the widescreen version. Patchers exist for NTSC-U, NTSC-J, and PAL.
 2. Download and install the [ROM Patcher](https://github.com/btimofeev/UniPatcher/releases/latest)
 3. Place your original ShadowTheHedgehog ROM in ISO format into an accessible folder
 4. Extract the Reloaded release zip you downloaded, and place the `reloaded-[region]-[aspect].xdelta` somewhere UniPatcher will be able to access it.
@@ -106,21 +110,34 @@ https://youtu.be/uv9gpqEbXU4
 6. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
 7. Turn off "Emulate Disc Speed" in your game configuration, or Dolphin configuration.
 
+### Validate Patched ISO
+You can get your hashes of your ISO by right clicking your game in Dolphin's game list -> `Properties` -> `Verify` tab.
+
+Below are the expected results after patching your ISO with Reloaded v1.2.
+
+| ROM                          | CRC32 Hash    | SHA-1 Hash                               |
+| ---------------------------- | ------------- | ---------------------------------------- |
+| RELOADED                     | e159740e      | 7496bb93064e75b6346b4d4219e89fddaf35c1be |
+| RELOADED WIDESCREEN          | 608b69c4      | 246329735cd79fd0fe187c61b94487e75c42f1b7 |
+
+### Changelog
+[A human changelog history can be found here.](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/blob/master/workspace/changelog.pdf)
+
 # Credits
 
 ### Direct Contributions
 
 - LimblessVector
-: Project Lead
+: Project Lead, Designer, Programmer/Developer, Art Direction/Implementation
 
 - dreamsyntax
-: Reloaded Co-Developer, work on Heroes Power Plant, other misc tools
+: Programmer/Developer, Widescreen, work on Heroes Power Plant, other misc tools
 
 - TheHatedGravity
-: Model, Movie, and Font Help
+: Model, Movie, Widescreen, Font (Universal MET)
 
 - BlazinZzetti
-: Code Contributor, Developer of Shadow SX, and Help
+: Code Contributor, Developer of Shadow SX
 
 ### Thanks
 
@@ -128,10 +145,10 @@ https://youtu.be/uv9gpqEbXU4
 : for the original Shadow the Hedgehog
 
 - igorsabra4
-: for Heroes Power Plant and other file reversing help
+: for Heroes Power Plant and other file reversing assistance
 
-- Sewer56	
-: for HeroesONE Reloaded and other file reversing help
+- Sewer56
+: for HeroesONE Reloaded and other file reversing assistance
 
 - MainMemory
 : for HeroesONE
@@ -151,10 +168,10 @@ https://youtu.be/uv9gpqEbXU4
 - The Spectral Star, Jesus_PK, $$$Link, Angry Waiter, and many more! 
 : Testing, Feedback
 
-- Sanglish, Jesus_PK, TheFetiʂhMachiոe, dreamsyntax's mom, 
+- Sanglish, Jesus_PK, TheFetiʂhMachiոe, dreamsyntax's mom
 : Custom Hint Translation assistance
 
-- aldelaro5
+- aldelaro5 and DME contributors
 : for Dolphin Memory Engine
 
 - InternetExplorer
