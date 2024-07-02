@@ -106,40 +106,6 @@ https://youtu.be/uv9gpqEbXU4
 6. `ISO NAME [PATCHED].iso` should be created successfully. If you run into errors, likely the ISO is wrong hash, double check your original game.
 7. Turn off "Emulate Disc Speed" in your game configuration, or Dolphin configuration.
 
-## How to Build Reloaded Yourself
-
-### TODO: Move this to its own page, with a link here instead.
-
-IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The below does not account for Nintendont compatibility by file deletion/downsampling/AFS replacements.
-1. Build a custom ISO overwriting any files from the `ISO EDITS` folder (below is steps how to do this)
-2. Enable Cheats and use provided game config .ini from the `code` folder - placing the `GUPE8P.ini` file in `Dolphin\User\GameSettings`
-
-### Extraction of Original Game / FST Format
-1. Get the latest beta or dev Dolphin - [dolphin-5.0-21460 or newer recommended](https://dolphin-emu.org/download/)
-2. (Optional: only do this step if you want to keep config separate) Before launching dolphin, create an empty file
-   `portable.txt` in the same folder as Dolphin.exe
-3. Open Dolphin
-4. Right-click Shadow The Hedgehog in the game list
-5. Select Properties
-6. Select FileSystem Tab
-7. Right-click "Disc"
-8. Select Extract Entire Disc...
-9. Select a new folder where you will store the game content and modify its files
-
-### Replacement of Files & Converting FST to ISO
-1. Open the newly extracted folder and merge/overwrite the `files` folder files
-2. Open Dolphin
-3. Open Config (next to Graphics and Controllers)
-4. Select Paths Tab
-5. Select "Add" for Game Folders
-6. Navigate to the folder where you extracted the game
-7. Open the `sys` folder, and select "Select Folder"
-8. Close the confirmation pane, your games list should populate a new 0 filesize game of Shadow The Hedgehog. The 0 filesize entry is the FST format game
-9. Right click the FST format game and pick `Convert File...`
-10. The Convert window will appear, click "Convert..." and name it `game.iso` for Nintendont, or `ShdTH-Reloaded.iso` for Dolphin
-11. Move/Save the ISO to the Path Dolphin detects your games. A new ShadowTH-Reloaded entry should appear in your Dolphins game list with greater than 0 filesize. Use this when playing the game
-12. Click View -> Purge Game List Cache if the Reloaded Icon is not appearing on the new entry. If it still does not appear, the files were not properly replaced
-
 # Credits
 
 ### Direct Contributions
@@ -185,7 +151,7 @@ IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The bel
 - The Spectral Star, Jesus_PK, $$$Link, Angry Waiter, and many more! 
 : Testing, Feedback
 
-- Sanglish, Jesus_PK, dreamsyntax's mom, 
+- Sanglish, Jesus_PK, TheFetiʂhMachiոe, dreamsyntax's mom, 
 : Custom Hint Translation assistance
 
 - aldelaro5
@@ -207,3 +173,5 @@ IT IS RECOMMENDED TO USE THE "RELEASES" TAB RATHER THAN DOING THE BELOW. The bel
 : for various RAM reference codes and discoveries
 
 And the Heroes & Shadow Hacking Central Discord community for their input, motivation, miscellaneous help, and friendship. We could never have gotten this far without all of you. <3
+
+[Click here to learn how to build from source (not recommended for most users)](https://github.com/ShadowTheHedgehogHacking/ShdTH-Reloaded/blob/master/workspace)
